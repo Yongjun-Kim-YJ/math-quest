@@ -1,0 +1,135 @@
+[gd_scene load_steps=6 format=3 uid="uid://dqso51qlcrf77"]
+
+[ext_resource type="Texture2D" uid="uid://bs6xwru04t66b" path="res://icon.svg" id="1_sf5j1"]
+[ext_resource type="PackedScene" uid="uid://bqabb3t2x85sq" path="res://캐릭터/캐릭터.tscn" id="2_bqabm"]
+[ext_resource type="Texture2D" uid="uid://cn854aisv1c4r" path="res://Godot Engine 실전 2D 어드벤처 게임 제작 - 자료/아이템/Checkpoints/End/End (Idle).png" id="3_560ac"]
+[ext_resource type="PackedScene" uid="uid://be5qtgrdkllxe" path="res://다음맵이동포탈/다음맵이동포탈.tscn" id="4_i4avg"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_61n2u"]
+size = Vector2(128, 128)
+
+[node name="레벨1" type="Node2D"]
+
+[node name="발판" type="StaticBody2D" parent="."]
+position = Vector2(696, 738)
+
+[node name="Icon" type="Sprite2D" parent="발판"]
+texture = ExtResource("1_sf5j1")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="발판"]
+shape = SubResource("RectangleShape2D_61n2u")
+
+[node name="발판2" type="StaticBody2D" parent="."]
+position = Vector2(824, 738)
+
+[node name="Icon" type="Sprite2D" parent="발판2"]
+texture = ExtResource("1_sf5j1")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="발판2"]
+shape = SubResource("RectangleShape2D_61n2u")
+
+[node name="발판3" type="StaticBody2D" parent="."]
+position = Vector2(1078, 670)
+
+[node name="Icon" type="Sprite2D" parent="발판3"]
+texture = ExtResource("1_sf5j1")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="발판3"]
+shape = SubResource("RectangleShape2D_61n2u")
+
+[node name="발판4" type="StaticBody2D" parent="."]
+position = Vector2(66, 722)
+
+[node name="Icon" type="Sprite2D" parent="발판4"]
+texture = ExtResource("1_sf5j1")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="발판4"]
+position = Vector2(-1, 12)
+shape = SubResource("RectangleShape2D_61n2u")
+
+[node name="발판5" type="StaticBody2D" parent="."]
+position = Vector2(194, 722)
+
+[node name="Icon" type="Sprite2D" parent="발판5"]
+texture = ExtResource("1_sf5j1")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="발판5"]
+shape = SubResource("RectangleShape2D_61n2u")
+
+[node name="발판6" type="StaticBody2D" parent="."]
+position = Vector2(448, 654)
+
+[node name="Icon" type="Sprite2D" parent="발판6"]
+texture = ExtResource("1_sf5j1")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="발판6"]
+shape = SubResource("RectangleShape2D_61n2u")
+
+[node name="발판7" type="StaticBody2D" parent="."]
+position = Vector2(699, 365)
+
+[node name="Icon" type="Sprite2D" parent="발판7"]
+texture = ExtResource("1_sf5j1")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="발판7"]
+shape = SubResource("RectangleShape2D_61n2u")
+
+[node name="발판8" type="StaticBody2D" parent="."]
+position = Vector2(827, 365)
+
+[node name="Icon" type="Sprite2D" parent="발판8"]
+texture = ExtResource("1_sf5j1")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="발판8"]
+shape = SubResource("RectangleShape2D_61n2u")
+
+[node name="발판9" type="StaticBody2D" parent="."]
+position = Vector2(1218, 463)
+
+[node name="Icon" type="Sprite2D" parent="발판9"]
+texture = ExtResource("1_sf5j1")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="발판9"]
+shape = SubResource("RectangleShape2D_61n2u")
+
+[node name="발판10" type="StaticBody2D" parent="."]
+position = Vector2(955, 365)
+
+[node name="Icon" type="Sprite2D" parent="발판10"]
+texture = ExtResource("1_sf5j1")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="발판10"]
+shape = SubResource("RectangleShape2D_61n2u")
+
+[node name="발판11" type="StaticBody2D" parent="."]
+position = Vector2(197, 349)
+
+[node name="Icon" type="Sprite2D" parent="발판11"]
+texture = ExtResource("1_sf5j1")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="발판11"]
+shape = SubResource("RectangleShape2D_61n2u")
+
+[node name="발판12" type="StaticBody2D" parent="."]
+position = Vector2(451, 281)
+
+[node name="Icon" type="Sprite2D" parent="발판12"]
+texture = ExtResource("1_sf5j1")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="발판12"]
+shape = SubResource("RectangleShape2D_61n2u")
+
+[node name="End(idle)" type="Sprite2D" parent="."]
+position = Vector2(199, 232)
+scale = Vector2(1.6875, 1.6875)
+texture = ExtResource("3_560ac")
+
+[node name="다음맵이동포탈" parent="." instance=ExtResource("4_i4avg")]
+position = Vector2(200, 209)
+
+[node name="캐릭터" parent="." instance=ExtResource("2_bqabm")]
+position = Vector2(63, 198)
+
+[node name="Camera2D" type="Camera2D" parent="캐릭터"]
+position = Vector2(0, -9)
+scale = Vector2(0.25, 0.25)

@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://c2x72yfi3b3sf"
+path="res://.godot/imported/507702__mrthenoronha__hit-4-8-bit.wav-62f95328ad9d4bc5e84b21c759e6c83b.sample"
+
+[deps]
+
+source_file="res://Godot Engine 실전 2D 어드벤처 게임 제작 - 자료/소리/507702__mrthenoronha__hit-4-8-bit.wav"
+dest_files=["res://.godot/imported/507702__mrthenoronha__hit-4-8-bit.wav-62f95328ad9d4bc5e84b21c759e6c83b.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2

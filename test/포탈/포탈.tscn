@@ -1,0 +1,111 @@
+[gd_scene load_steps=16 format=3 uid="uid://d2h551miotvf2"]
+
+[ext_resource type="Texture2D" uid="uid://coi82pfbye4x4" path="res://prototype/potal.png" id="1_d2huk"]
+[ext_resource type="Script" uid="uid://bff25oeurl5ob" path="res://포탈/포탈.gd" id="1_jlqqg"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_jlqqg"]
+atlas = ExtResource("1_d2huk")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_l5ve2"]
+atlas = ExtResource("1_d2huk")
+region = Rect2(32, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_pivdp"]
+atlas = ExtResource("1_d2huk")
+region = Rect2(64, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_xuicr"]
+atlas = ExtResource("1_d2huk")
+region = Rect2(96, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_sml7f"]
+atlas = ExtResource("1_d2huk")
+region = Rect2(128, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ci7is"]
+atlas = ExtResource("1_d2huk")
+region = Rect2(160, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4mvr3"]
+atlas = ExtResource("1_d2huk")
+region = Rect2(192, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8hi6b"]
+atlas = ExtResource("1_d2huk")
+region = Rect2(224, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_2xnvq"]
+atlas = ExtResource("1_d2huk")
+region = Rect2(256, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_1petw"]
+atlas = ExtResource("1_d2huk")
+region = Rect2(288, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_eb1cw"]
+atlas = ExtResource("1_d2huk")
+region = Rect2(320, 0, 32, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_ovsxi"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_jlqqg")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_l5ve2")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_pivdp")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_xuicr")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_sml7f")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ci7is")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_4mvr3")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_8hi6b")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_2xnvq")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_1petw")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_eb1cw")
+}],
+"loop": true,
+"name": &"기본",
+"speed": 11.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ja100"]
+size = Vector2(20, 26)
+
+[node name="포탈" type="Area2D"]
+scale = Vector2(3, 3)
+collision_layer = 16
+script = ExtResource("1_jlqqg")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(0, -16)
+sprite_frames = SubResource("SpriteFrames_ovsxi")
+animation = &"기본"
+autoplay = "기본"
+frame_progress = 0.819002
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, -13)
+shape = SubResource("RectangleShape2D_ja100")
+
+[connection signal="body_entered" from="." to="." method="_on_캐릭터충돌판정_body_entered"]
+[connection signal="body_exited" from="." to="." method="_on_캐릭터충돌판정_body_exited"]

@@ -1,0 +1,87 @@
+[gd_scene load_steps=13 format=3 uid="uid://bava8ci4pqjsk"]
+
+[ext_resource type="Script" uid="uid://cycysb0n7tksw" path="res://테스트캐릭터/테스트캐릭터.gd" id="1_iewr1"]
+[ext_resource type="Texture2D" uid="uid://bms10my5eidaq" path="res://prototype/hero/body_idle.png" id="1_o8cse"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_iewr1"]
+atlas = ExtResource("1_o8cse")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_dlyyd"]
+atlas = ExtResource("1_o8cse")
+region = Rect2(32, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_16ak5"]
+atlas = ExtResource("1_o8cse")
+region = Rect2(64, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8m4yk"]
+atlas = ExtResource("1_o8cse")
+region = Rect2(96, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_y1vnq"]
+atlas = ExtResource("1_o8cse")
+region = Rect2(128, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_64cxh"]
+atlas = ExtResource("1_o8cse")
+region = Rect2(160, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ohd6i"]
+atlas = ExtResource("1_o8cse")
+region = Rect2(192, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ehmms"]
+atlas = ExtResource("1_o8cse")
+region = Rect2(224, 0, 32, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_phgs1"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_iewr1")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_dlyyd")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_16ak5")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_8m4yk")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_y1vnq")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_64cxh")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ohd6i")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ehmms")
+}],
+"loop": true,
+"name": &"기본",
+"speed": 5.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_dlyyd"]
+size = Vector2(52, 74)
+
+[node name="테스트캐릭터" type="CharacterBody2D"]
+script = ExtResource("1_iewr1")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(0, -64)
+scale = Vector2(4, 4)
+sprite_frames = SubResource("SpriteFrames_phgs1")
+animation = &"기본"
+autoplay = "기본"
+frame = 1
+frame_progress = 0.82897
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, -37)
+shape = SubResource("RectangleShape2D_dlyyd")

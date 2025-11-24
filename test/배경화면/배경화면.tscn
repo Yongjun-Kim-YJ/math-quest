@@ -1,0 +1,20 @@
+[gd_scene load_steps=4 format=3 uid="uid://ct6kywu5oa402"]
+
+[ext_resource type="Script" uid="uid://wp7yf5kciumd" path="res://배경화면/배경화면.gd" id="1_48h5l"]
+[ext_resource type="Texture2D" uid="uid://c1hhv32tnfdpm" path="res://Godot Engine 실전 2D 어드벤처 게임 제작 - 자료/배경/Gray.png" id="1_p63s2"]
+[ext_resource type="Texture2D" uid="uid://53kdtywcsmrm" path="res://Godot Engine 실전 2D 어드벤처 게임 제작 - 자료/배경/Green.png" id="2_d0g0g"]
+
+[node name="배경화면" type="ParallaxBackground"]
+script = ExtResource("1_48h5l")
+"배경이미지" = ExtResource("2_d0g0g")
+
+[node name="ParallaxLayer" type="ParallaxLayer" parent="."]
+motion_mirroring = Vector2(1024, 1024)
+
+[node name="Sprite2D" type="Sprite2D" parent="ParallaxLayer"]
+texture_repeat = 2
+scale = Vector2(4, 4)
+texture = ExtResource("1_p63s2")
+centered = false
+region_enabled = true
+region_rect = Rect2(0, 0, 256, 256)

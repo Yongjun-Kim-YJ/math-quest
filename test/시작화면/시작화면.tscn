@@ -1,0 +1,76 @@
+[gd_scene load_steps=6 format=3 uid="uid://dprs3dtyyr6em"]
+
+[ext_resource type="Script" uid="uid://b0y3h2jwhp5n2" path="res://시작화면/시작화면.gd" id="1_fk14r"]
+[ext_resource type="FontFile" uid="uid://bhw1jjrfkp7dg" path="res://Godot Engine 실전 2D 어드벤처 게임 제작 - 자료/폰트/DOSPilgi.ttf" id="1_wohm3"]
+[ext_resource type="Texture2D" uid="uid://cq75k8vpvn4mm" path="res://prototype/hero/body_minimap.png" id="3_fk14r"]
+[ext_resource type="PackedScene" uid="uid://ct6kywu5oa402" path="res://배경화면/배경화면.tscn" id="3_s6a02"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_miotl"]
+font = ExtResource("1_wohm3")
+font_size = 100
+font_color = Color(0.184314, 0.85098, 0.87451, 1)
+outline_size = 5
+outline_color = Color(0.294118, 0.607843, 0.466667, 1)
+shadow_size = 5
+shadow_color = Color(0, 0, 0, 0.733333)
+shadow_offset = Vector2(3, 3)
+
+[node name="시작화면" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_fk14r")
+
+[node name="게임제목" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -225.0
+offset_top = -231.0
+offset_right = 225.0
+offset_bottom = -130.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "테스트 게임"
+label_settings = SubResource("LabelSettings_miotl")
+
+[node name="게임 시작 버튼" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -505.0
+offset_top = -263.0
+offset_right = -182.0
+offset_bottom = -137.0
+grow_horizontal = 0
+grow_vertical = 0
+theme_override_fonts/font = ExtResource("1_wohm3")
+theme_override_font_sizes/font_size = 50
+text = "게임 시작"
+
+[node name="Container" type="Container" parent="."]
+layout_mode = 1
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_top = -40.0
+offset_right = 40.0
+grow_vertical = 0
+
+[node name="주인공" type="Sprite2D" parent="Container"]
+position = Vector2(327, -204)
+scale = Vector2(9.08594, 9.08594)
+texture = ExtResource("3_fk14r")
+
+[node name="배경화면" parent="." instance=ExtResource("3_s6a02")]
+
+[connection signal="pressed" from="게임 시작 버튼" to="." method="_on_게임_시작_버튼_pressed"]

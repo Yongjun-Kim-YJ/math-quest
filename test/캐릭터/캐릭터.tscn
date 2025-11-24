@@ -1,0 +1,1972 @@
+[gd_scene load_steps=156 format=3 uid="uid://bqabb3t2x85sq"]
+
+[ext_resource type="Script" uid="uid://dg8kfyp3a75wf" path="res://캐릭터/캐릭터.gd" id="1_btloq"]
+[ext_resource type="Texture2D" uid="uid://bo7qhv0enot1r" path="res://Godot Engine 실전 2D 어드벤처 게임 제작 - 자료/캐릭터/Ninja Frog/Idle (32x32).png" id="1_wsdg4"]
+[ext_resource type="Texture2D" uid="uid://bgschjv4uigr3" path="res://ddd.png" id="2_wjurc"]
+[ext_resource type="Texture2D" uid="uid://bxydbjyrwwto8" path="res://Godot Engine 실전 2D 어드벤처 게임 제작 - 자료/캐릭터/Ninja Frog/Run (32x32).png" id="2_xaqfc"]
+[ext_resource type="Texture2D" uid="uid://6akudwpd5fdg" path="res://Godot Engine 실전 2D 어드벤처 게임 제작 - 자료/캐릭터/Ninja Frog/Fall (32x32).png" id="3_cmtnf"]
+[ext_resource type="Texture2D" uid="uid://b6mykxeqha0pv" path="res://Godot Engine 실전 2D 어드벤처 게임 제작 - 자료/캐릭터/Ninja Frog/Jump (32x32).png" id="5_wjurc"]
+[ext_resource type="Texture2D" uid="uid://catg2cpffhj14" path="res://prototype/hero/body_dmgground.png" id="6_3dgep"]
+[ext_resource type="Texture2D" uid="uid://blby5lwvts8ii" path="res://prototype/hero/body_walk.png" id="7_tg6ek"]
+[ext_resource type="Texture2D" uid="uid://be7hqwyvvyp3n" path="res://prototype/hero/body_climbladder.png" id="8_ovgml"]
+[ext_resource type="Texture2D" uid="uid://cofe55oswxj1j" path="res://prototype/hero/body_climbrope.png" id="8_yq3ro"]
+[ext_resource type="Texture2D" uid="uid://bms10my5eidaq" path="res://prototype/hero/body_idle.png" id="10_t3kwr"]
+[ext_resource type="Texture2D" uid="uid://c1sax3tpi28r0" path="res://prototype/hero/top_01_idle.png" id="11_wacbp"]
+[ext_resource type="Texture2D" uid="uid://c0iq5c78evnnk" path="res://prototype/hero/hair_01_walk.png" id="12_3seev"]
+[ext_resource type="Texture2D" uid="uid://du6pm6gff6080" path="res://prototype/hero/bottom_01_idle.png" id="12_gypvn"]
+[ext_resource type="Texture2D" uid="uid://8dqc3dbeecwq" path="res://prototype/hero/hair_01_dmgground.png" id="12_ny5mu"]
+[ext_resource type="Texture2D" uid="uid://qx4aq3xbfmah" path="res://prototype/hero/hair_01_idle.png" id="13_tg6ek"]
+[ext_resource type="Texture2D" uid="uid://cwqxd3eav21i4" path="res://prototype/hero/top_01_dmgground.png" id="14_ny5mu"]
+[ext_resource type="Texture2D" uid="uid://bpkeysr4lmhl2" path="res://prototype/hero/top_01_walk.png" id="14_rg85m"]
+[ext_resource type="Texture2D" uid="uid://cdnrhttaw7ewk" path="res://prototype/hero/bottom_01_dmgground.png" id="16_3seev"]
+[ext_resource type="Texture2D" uid="uid://dxwai7fksgkvk" path="res://prototype/hero/bottom_01_walk.png" id="16_ny5mu"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ejoj1"]
+atlas = ExtResource("1_wsdg4")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_7tjpa"]
+atlas = ExtResource("1_wsdg4")
+region = Rect2(32, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_blohn"]
+atlas = ExtResource("1_wsdg4")
+region = Rect2(64, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_r80ff"]
+atlas = ExtResource("1_wsdg4")
+region = Rect2(96, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_1bynm"]
+atlas = ExtResource("1_wsdg4")
+region = Rect2(128, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_nsmoq"]
+atlas = ExtResource("1_wsdg4")
+region = Rect2(160, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_xgltd"]
+atlas = ExtResource("1_wsdg4")
+region = Rect2(192, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_qs1br"]
+atlas = ExtResource("1_wsdg4")
+region = Rect2(224, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_p416j"]
+atlas = ExtResource("1_wsdg4")
+region = Rect2(256, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_wm781"]
+atlas = ExtResource("1_wsdg4")
+region = Rect2(288, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_issmq"]
+atlas = ExtResource("1_wsdg4")
+region = Rect2(320, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_xaqfc"]
+atlas = ExtResource("2_xaqfc")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_btloq"]
+atlas = ExtResource("2_xaqfc")
+region = Rect2(32, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_65yb1"]
+atlas = ExtResource("2_xaqfc")
+region = Rect2(64, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_cmtnf"]
+atlas = ExtResource("2_xaqfc")
+region = Rect2(96, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_wjurc"]
+atlas = ExtResource("2_xaqfc")
+region = Rect2(128, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_3dgep"]
+atlas = ExtResource("2_xaqfc")
+region = Rect2(160, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ovgml"]
+atlas = ExtResource("2_xaqfc")
+region = Rect2(192, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_yq3ro"]
+atlas = ExtResource("2_xaqfc")
+region = Rect2(224, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_t3kwr"]
+atlas = ExtResource("2_xaqfc")
+region = Rect2(256, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_m1vqn"]
+atlas = ExtResource("2_xaqfc")
+region = Rect2(288, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_wacbp"]
+atlas = ExtResource("2_xaqfc")
+region = Rect2(320, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_gypvn"]
+atlas = ExtResource("2_xaqfc")
+region = Rect2(352, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0rif6"]
+atlas = ExtResource("7_tg6ek")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_g114u"]
+atlas = ExtResource("7_tg6ek")
+region = Rect2(32, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_nuh8y"]
+atlas = ExtResource("7_tg6ek")
+region = Rect2(64, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_76id6"]
+atlas = ExtResource("7_tg6ek")
+region = Rect2(96, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_7cl8q"]
+atlas = ExtResource("7_tg6ek")
+region = Rect2(128, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_gog2y"]
+atlas = ExtResource("7_tg6ek")
+region = Rect2(160, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_v5t4k"]
+atlas = ExtResource("7_tg6ek")
+region = Rect2(192, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8skmt"]
+atlas = ExtResource("7_tg6ek")
+region = Rect2(224, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_542gm"]
+atlas = ExtResource("7_tg6ek")
+region = Rect2(256, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_cng6s"]
+atlas = ExtResource("7_tg6ek")
+region = Rect2(288, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_46173"]
+atlas = ExtResource("7_tg6ek")
+region = Rect2(320, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_30lja"]
+atlas = ExtResource("7_tg6ek")
+region = Rect2(352, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_08d8a"]
+atlas = ExtResource("6_3dgep")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0g2rl"]
+atlas = ExtResource("6_3dgep")
+region = Rect2(32, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_7m2p8"]
+atlas = ExtResource("2_wjurc")
+region = Rect2(128, 17, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_xpa7u"]
+atlas = ExtResource("2_wjurc")
+region = Rect2(160, 17, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_5p47s"]
+atlas = ExtResource("8_yq3ro")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_64lp6"]
+atlas = ExtResource("8_yq3ro")
+region = Rect2(32, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_rvn2o"]
+atlas = ExtResource("8_ovgml")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_bhr8o"]
+atlas = ExtResource("8_ovgml")
+region = Rect2(32, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_fgukr"]
+atlas = ExtResource("10_t3kwr")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_wc1iw"]
+atlas = ExtResource("10_t3kwr")
+region = Rect2(32, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_xmaoq"]
+atlas = ExtResource("10_t3kwr")
+region = Rect2(64, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_tg6ek"]
+atlas = ExtResource("10_t3kwr")
+region = Rect2(96, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_3seev"]
+atlas = ExtResource("10_t3kwr")
+region = Rect2(128, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_rg85m"]
+atlas = ExtResource("10_t3kwr")
+region = Rect2(160, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ny5mu"]
+atlas = ExtResource("10_t3kwr")
+region = Rect2(192, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_npy1o"]
+atlas = ExtResource("10_t3kwr")
+region = Rect2(224, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4tnle"]
+atlas = ExtResource("2_wjurc")
+region = Rect2(32, 17, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_uao2e"]
+atlas = ExtResource("2_wjurc")
+region = Rect2(64, 17, 32, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_gypvn"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ejoj1")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_7tjpa")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_blohn")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_r80ff")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_1bynm")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_nsmoq")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_xgltd")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_qs1br")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_p416j")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_wm781")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_issmq")
+}],
+"loop": true,
+"name": &"Idle_1",
+"speed": 15.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("3_cmtnf")
+}],
+"loop": false,
+"name": &"fall",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("5_wjurc")
+}],
+"loop": false,
+"name": &"jump",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_xaqfc")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_btloq")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_65yb1")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_cmtnf")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_wjurc")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_3dgep")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ovgml")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_yq3ro")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_t3kwr")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_m1vqn")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_wacbp")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_gypvn")
+}],
+"loop": true,
+"name": &"run",
+"speed": 15.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_0rif6")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_g114u")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_nuh8y")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_76id6")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_7cl8q")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_gog2y")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_v5t4k")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_8skmt")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_542gm")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_cng6s")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_46173")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_30lja")
+}],
+"loop": true,
+"name": &"걷기",
+"speed": 11.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_08d8a")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_0g2rl")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_08d8a")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_0g2rl")
+}],
+"loop": true,
+"name": &"공격당함",
+"speed": 6.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_7m2p8")
+}, {
+"duration": 15.0,
+"texture": SubResource("AtlasTexture_xpa7u")
+}],
+"loop": true,
+"name": &"떨어지기",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_5p47s")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_64lp6")
+}],
+"loop": true,
+"name": &"로프이동",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_64lp6")
+}],
+"loop": true,
+"name": &"로프정지",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_rvn2o")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_bhr8o")
+}],
+"loop": true,
+"name": &"사다리이동",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_bhr8o")
+}],
+"loop": false,
+"name": &"사다리정지",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_fgukr")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_wc1iw")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_xmaoq")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_tg6ek")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_3seev")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_rg85m")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ny5mu")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_npy1o")
+}],
+"loop": true,
+"name": &"서있기",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_4tnle")
+}, {
+"duration": 15.0,
+"texture": SubResource("AtlasTexture_uao2e")
+}],
+"loop": true,
+"name": &"점프",
+"speed": 15.0
+}]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_edmkm"]
+atlas = ExtResource("12_3seev")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_djc8s"]
+atlas = ExtResource("12_3seev")
+region = Rect2(32, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_i6c2d"]
+atlas = ExtResource("12_3seev")
+region = Rect2(64, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_cx4ls"]
+atlas = ExtResource("12_3seev")
+region = Rect2(96, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_dt6y6"]
+atlas = ExtResource("12_3seev")
+region = Rect2(128, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_6y2s8"]
+atlas = ExtResource("12_3seev")
+region = Rect2(160, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_wv56x"]
+atlas = ExtResource("12_3seev")
+region = Rect2(192, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_af5d8"]
+atlas = ExtResource("12_3seev")
+region = Rect2(224, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_57v1o"]
+atlas = ExtResource("12_3seev")
+region = Rect2(256, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_1aon1"]
+atlas = ExtResource("12_3seev")
+region = Rect2(288, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_aqjyg"]
+atlas = ExtResource("12_3seev")
+region = Rect2(320, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_62fwy"]
+atlas = ExtResource("12_3seev")
+region = Rect2(352, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_27sgt"]
+atlas = ExtResource("12_ny5mu")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_oban3"]
+atlas = ExtResource("12_ny5mu")
+region = Rect2(32, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ti6fa"]
+atlas = ExtResource("13_tg6ek")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_3kdot"]
+atlas = ExtResource("13_tg6ek")
+region = Rect2(32, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_yfd0t"]
+atlas = ExtResource("13_tg6ek")
+region = Rect2(64, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_d6n6k"]
+atlas = ExtResource("13_tg6ek")
+region = Rect2(96, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_gl5ee"]
+atlas = ExtResource("13_tg6ek")
+region = Rect2(128, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_53rvh"]
+atlas = ExtResource("13_tg6ek")
+region = Rect2(160, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_hq7o2"]
+atlas = ExtResource("13_tg6ek")
+region = Rect2(192, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_6r52c"]
+atlas = ExtResource("13_tg6ek")
+region = Rect2(224, 0, 32, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_m311d"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_edmkm")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_djc8s")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_i6c2d")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_cx4ls")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_dt6y6")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_6y2s8")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_wv56x")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_af5d8")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_57v1o")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_1aon1")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_aqjyg")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_62fwy")
+}],
+"loop": true,
+"name": &"걷기",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_27sgt")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_oban3")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_27sgt")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_oban3")
+}],
+"loop": true,
+"name": &"공격당함",
+"speed": 6.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ti6fa")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_3kdot")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_yfd0t")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_d6n6k")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_gl5ee")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_53rvh")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_hq7o2")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_6r52c")
+}],
+"loop": true,
+"name": &"서있기",
+"speed": 5.0
+}, {
+"frames": [],
+"loop": true,
+"name": &"점프",
+"speed": 5.0
+}]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_thfrl"]
+atlas = ExtResource("14_rg85m")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_y0dgq"]
+atlas = ExtResource("14_rg85m")
+region = Rect2(32, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_hvxot"]
+atlas = ExtResource("14_rg85m")
+region = Rect2(64, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_6agm5"]
+atlas = ExtResource("14_rg85m")
+region = Rect2(96, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_bfxvu"]
+atlas = ExtResource("14_rg85m")
+region = Rect2(128, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_j6041"]
+atlas = ExtResource("14_rg85m")
+region = Rect2(160, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_3c6w1"]
+atlas = ExtResource("14_rg85m")
+region = Rect2(192, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_3glbf"]
+atlas = ExtResource("14_rg85m")
+region = Rect2(224, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_o2h55"]
+atlas = ExtResource("14_rg85m")
+region = Rect2(256, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_g7krh"]
+atlas = ExtResource("14_rg85m")
+region = Rect2(288, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_bivmg"]
+atlas = ExtResource("14_rg85m")
+region = Rect2(320, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_gvqvo"]
+atlas = ExtResource("14_rg85m")
+region = Rect2(352, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_6mqic"]
+atlas = ExtResource("14_ny5mu")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ud2vc"]
+atlas = ExtResource("14_ny5mu")
+region = Rect2(32, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_m311d"]
+atlas = ExtResource("11_wacbp")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_j8ll6"]
+atlas = ExtResource("11_wacbp")
+region = Rect2(32, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_53ebr"]
+atlas = ExtResource("11_wacbp")
+region = Rect2(64, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_du3ds"]
+atlas = ExtResource("11_wacbp")
+region = Rect2(96, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_dnuda"]
+atlas = ExtResource("11_wacbp")
+region = Rect2(128, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_y8h10"]
+atlas = ExtResource("11_wacbp")
+region = Rect2(160, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_hndkn"]
+atlas = ExtResource("11_wacbp")
+region = Rect2(192, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_iqfkh"]
+atlas = ExtResource("11_wacbp")
+region = Rect2(224, 0, 32, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_edmkm"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_thfrl")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_y0dgq")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_hvxot")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_6agm5")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_bfxvu")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_j6041")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_3c6w1")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_3glbf")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_o2h55")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_g7krh")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_bivmg")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_gvqvo")
+}],
+"loop": true,
+"name": &"걷기",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_6mqic")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ud2vc")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_6mqic")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ud2vc")
+}],
+"loop": true,
+"name": &"공격당함",
+"speed": 6.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_m311d")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_j8ll6")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_53ebr")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_du3ds")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_dnuda")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_y8h10")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_hndkn")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_iqfkh")
+}],
+"loop": true,
+"name": &"서있기",
+"speed": 5.0
+}]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_itaj0"]
+atlas = ExtResource("16_ny5mu")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ekjxi"]
+atlas = ExtResource("16_ny5mu")
+region = Rect2(32, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_spuuy"]
+atlas = ExtResource("16_ny5mu")
+region = Rect2(64, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_j7dqf"]
+atlas = ExtResource("16_ny5mu")
+region = Rect2(96, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_mkgh5"]
+atlas = ExtResource("16_ny5mu")
+region = Rect2(128, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_feqrp"]
+atlas = ExtResource("16_ny5mu")
+region = Rect2(160, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ti4na"]
+atlas = ExtResource("16_ny5mu")
+region = Rect2(192, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_qymqc"]
+atlas = ExtResource("16_ny5mu")
+region = Rect2(224, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_bw5cs"]
+atlas = ExtResource("16_ny5mu")
+region = Rect2(256, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_80r70"]
+atlas = ExtResource("16_ny5mu")
+region = Rect2(288, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_nu5bw"]
+atlas = ExtResource("16_ny5mu")
+region = Rect2(320, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_gduro"]
+atlas = ExtResource("16_ny5mu")
+region = Rect2(352, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_uhjey"]
+atlas = ExtResource("16_3seev")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_egosn"]
+atlas = ExtResource("16_3seev")
+region = Rect2(32, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_1njn7"]
+atlas = ExtResource("12_gypvn")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_djjq2"]
+atlas = ExtResource("12_gypvn")
+region = Rect2(32, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_1pr7h"]
+atlas = ExtResource("12_gypvn")
+region = Rect2(64, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_l7dgi"]
+atlas = ExtResource("12_gypvn")
+region = Rect2(96, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_dsfyr"]
+atlas = ExtResource("12_gypvn")
+region = Rect2(128, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_7ib8c"]
+atlas = ExtResource("12_gypvn")
+region = Rect2(160, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_aub4i"]
+atlas = ExtResource("12_gypvn")
+region = Rect2(192, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_c6ndt"]
+atlas = ExtResource("12_gypvn")
+region = Rect2(224, 0, 32, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_djc8s"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_itaj0")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ekjxi")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_spuuy")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_j7dqf")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_mkgh5")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_feqrp")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ti4na")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_qymqc")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_bw5cs")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_80r70")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_nu5bw")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_gduro")
+}],
+"loop": true,
+"name": &"걷기",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_uhjey")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_egosn")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_uhjey")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_egosn")
+}],
+"loop": true,
+"name": &"공격당함",
+"speed": 6.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_1njn7")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_djjq2")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_1pr7h")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_l7dgi")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_dsfyr")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_7ib8c")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_aub4i")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_c6ndt")
+}],
+"loop": true,
+"name": &"서있기",
+"speed": 5.0
+}]
+
+[sub_resource type="Animation" id="Animation_3seev"]
+resource_name = "남자"
+length = 1.09092
+loop_mode = 1
+step = 0.0909091
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("기본Body:animation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [&"걷기"]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("머리:animation")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [&"걷기"]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("상의:animation")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [&"걷기"]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("하의:animation")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [&"걷기"]
+}
+
+[sub_resource type="Animation" id="Animation_7m2p8"]
+resource_name = "남자"
+length = 0.666683
+loop_mode = 1
+step = 0.166667
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("기본Body:animation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [&"공격당함"]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("머리:animation")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [&"공격당함"]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("상의:animation")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [&"공격당함"]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("하의:animation")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [&"공격당함"]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("기본Body:frame")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0, 0.166667, 0.333333, 0.5),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 1,
+"values": [0, 1, 2, 3]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("머리:frame")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0, 0.166667, 0.333333, 0.5),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 1,
+"values": [0, 1, 2, 3]
+}
+tracks/6/type = "value"
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/path = NodePath("상의:frame")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/keys = {
+"times": PackedFloat32Array(0, 0.166667, 0.333333, 0.5),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 1,
+"values": [0, 1, 2, 3]
+}
+tracks/7/type = "value"
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/path = NodePath("하의:frame")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/keys = {
+"times": PackedFloat32Array(0, 0.166667, 0.333333, 0.5),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 1,
+"values": [0, 1, 2, 3]
+}
+
+[sub_resource type="Animation" id="Animation_0g2rl"]
+resource_name = "남자"
+length = 1.60002
+loop_mode = 1
+step = 0.2
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("기본Body:animation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [&"서있기"]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("기본Body:frame")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.2, 0.4, 0.6, 0.8, 1, 1.2, 1.4),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [0, 1, 2, 3, 4, 5, 6, 7]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("머리:animation")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [&"서있기"]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("머리:frame")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0, 0.2, 0.4, 0.6, 0.8, 1, 1.2, 1.4),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [0, 1, 2, 3, 4, 5, 6, 7]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("상의:animation")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [&"서있기"]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("상의:frame")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0, 0.2, 0.4, 0.6, 0.8, 1, 1.2, 1.4),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [0, 1, 2, 3, 4, 5, 6, 7]
+}
+tracks/6/type = "value"
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/path = NodePath("하의:animation")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [&"서있기"]
+}
+tracks/7/type = "value"
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/path = NodePath("하의:frame")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/keys = {
+"times": PackedFloat32Array(0, 0.2, 0.4, 0.6, 0.8, 1, 1.2, 1.4),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [0, 1, 2, 3, 4, 5, 6, 7]
+}
+
+[sub_resource type="Animation" id="Animation_npy1o"]
+resource_name = "남자"
+length = 1.60002
+loop_mode = 1
+step = 0.2
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("기본Body:animation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [&"서있기"]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("기본Body:frame")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.2, 0.4, 0.6, 0.8, 1, 1.2, 1.4),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [0, 1, 2, 3, 4, 5, 6, 7]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("머리:animation")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [&"서있기"]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("머리:frame")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0, 0.2, 0.4, 0.6, 0.8, 1, 1.2, 1.4),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [0, 1, 2, 3, 4, 5, 6, 7]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("상의:animation")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [&"서있기"]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("상의:frame")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0, 0.2, 0.4, 0.6, 0.8, 1, 1.2, 1.4),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [0, 1, 2, 3, 4, 5, 6, 7]
+}
+tracks/6/type = "value"
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/path = NodePath("하의:animation")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [&"서있기"]
+}
+tracks/7/type = "value"
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/path = NodePath("하의:frame")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/keys = {
+"times": PackedFloat32Array(0, 0.2, 0.4, 0.6, 0.8, 1, 1.2, 1.4),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [0, 1, 2, 3, 4, 5, 6, 7]
+}
+
+[sub_resource type="Animation" id="Animation_08d8a"]
+resource_name = "남자"
+length = 1.60002
+loop_mode = 1
+step = 0.2
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("기본Body:animation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [&"서있기"]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("기본Body:frame")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.2, 0.4, 0.6, 0.8, 1, 1.2, 1.4),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [0, 1, 2, 3, 4, 5, 6, 7]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("머리:animation")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [&"서있기"]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("머리:frame")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0, 0.2, 0.4, 0.6, 0.8, 1, 1.2, 1.4),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [0, 1, 2, 3, 4, 5, 6, 7]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("상의:animation")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [&"서있기"]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("상의:frame")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0, 0.2, 0.4, 0.6, 0.8, 1, 1.2, 1.4),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [0, 1, 2, 3, 4, 5, 6, 7]
+}
+tracks/6/type = "value"
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/path = NodePath("하의:animation")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [&"서있기"]
+}
+tracks/7/type = "value"
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/path = NodePath("하의:frame")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/keys = {
+"times": PackedFloat32Array(0, 0.2, 0.4, 0.6, 0.8, 1, 1.2, 1.4),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [0, 1, 2, 3, 4, 5, 6, 7]
+}
+
+[sub_resource type="Animation" id="Animation_rg85m"]
+resource_name = "남자"
+length = 1.60002
+loop_mode = 1
+step = 0.2
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("기본Body:animation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [&"서있기"]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("기본Body:frame")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.2, 0.4, 0.6, 0.8, 1, 1.2, 1.4),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [0, 1, 2, 3, 4, 5, 6, 7]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("머리:animation")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [&"서있기"]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("머리:frame")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0, 0.2, 0.4, 0.6, 0.8, 1, 1.2, 1.4),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [0, 1, 2, 3, 4, 5, 6, 7]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("상의:animation")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [&"서있기"]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("상의:frame")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0, 0.2, 0.4, 0.6, 0.8, 1, 1.2, 1.4),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [0, 1, 2, 3, 4, 5, 6, 7]
+}
+tracks/6/type = "value"
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/path = NodePath("하의:animation")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [&"서있기"]
+}
+tracks/7/type = "value"
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/path = NodePath("하의:frame")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/keys = {
+"times": PackedFloat32Array(0, 0.2, 0.4, 0.6, 0.8, 1, 1.2, 1.4),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [0, 1, 2, 3, 4, 5, 6, 7]
+}
+
+[sub_resource type="Animation" id="Animation_ny5mu"]
+resource_name = "남자"
+length = 1.60002
+loop_mode = 1
+step = 0.2
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("기본Body:animation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [&"서있기"]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("기본Body:frame")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.2, 0.4, 0.6, 0.8, 1, 1.2, 1.4),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [0, 1, 2, 3, 4, 5, 6, 7]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("머리:animation")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [&"서있기"]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("머리:frame")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0, 0.2, 0.4, 0.6, 0.8, 1, 1.2, 1.4),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [0, 1, 2, 3, 4, 5, 6, 7]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("상의:animation")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [&"서있기"]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("상의:frame")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0, 0.2, 0.4, 0.6, 0.8, 1, 1.2, 1.4),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [0, 1, 2, 3, 4, 5, 6, 7]
+}
+tracks/6/type = "value"
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/path = NodePath("하의:animation")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [&"서있기"]
+}
+tracks/7/type = "value"
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/path = NodePath("하의:frame")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/keys = {
+"times": PackedFloat32Array(0, 0.2, 0.4, 0.6, 0.8, 1, 1.2, 1.4),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [0, 1, 2, 3, 4, 5, 6, 7]
+}
+
+[sub_resource type="Animation" id="Animation_m311d"]
+resource_name = "남자"
+length = 1.60002
+loop_mode = 1
+step = 0.2
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("기본Body:animation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [&"서있기"]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("기본Body:frame")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.2, 0.4, 0.6, 0.8, 1, 1.2, 1.4),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [0, 1, 2, 3, 4, 5, 6, 7]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("머리:animation")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [&"서있기"]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("머리:frame")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0, 0.2, 0.4, 0.6, 0.8, 1, 1.2, 1.4),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [0, 1, 2, 3, 4, 5, 6, 7]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("상의:animation")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [&"서있기"]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("상의:frame")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0, 0.2, 0.4, 0.6, 0.8, 1, 1.2, 1.4),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [0, 1, 2, 3, 4, 5, 6, 7]
+}
+tracks/6/type = "value"
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/path = NodePath("하의:animation")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [&"서있기"]
+}
+tracks/7/type = "value"
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/path = NodePath("하의:frame")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/keys = {
+"times": PackedFloat32Array(0, 0.2, 0.4, 0.6, 0.8, 1, 1.2, 1.4),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [0, 1, 2, 3, 4, 5, 6, 7]
+}
+
+[sub_resource type="Animation" id="Animation_tg6ek"]
+resource_name = "남자"
+length = 1.60002
+loop_mode = 1
+step = 0.2
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("기본Body:animation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [&"서있기"]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("기본Body:frame")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.2, 0.4, 0.6, 0.8, 1, 1.2, 1.4),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [0, 1, 2, 3, 4, 5, 6, 7]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("머리:animation")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [&"서있기"]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("머리:frame")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0, 0.2, 0.4, 0.6, 0.8, 1, 1.2, 1.4),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [0, 1, 2, 3, 4, 5, 6, 7]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("상의:animation")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [&"서있기"]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("상의:frame")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0, 0.2, 0.4, 0.6, 0.8, 1, 1.2, 1.4),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [0, 1, 2, 3, 4, 5, 6, 7]
+}
+tracks/6/type = "value"
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/path = NodePath("하의:animation")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [&"서있기"]
+}
+tracks/7/type = "value"
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/path = NodePath("하의:frame")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/keys = {
+"times": PackedFloat32Array(0, 0.2, 0.4, 0.6, 0.8, 1, 1.2, 1.4),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [0, 1, 2, 3, 4, 5, 6, 7]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_53ebr"]
+_data = {
+&"남자_걷기": SubResource("Animation_3seev"),
+&"남자_공격당함": SubResource("Animation_7m2p8"),
+&"남자_떨어지기": SubResource("Animation_0g2rl"),
+&"남자_로프이동": SubResource("Animation_npy1o"),
+&"남자_로프정지": SubResource("Animation_08d8a"),
+&"남자_사다리이동": SubResource("Animation_rg85m"),
+&"남자_사다리정지": SubResource("Animation_ny5mu"),
+&"남자_서있기": SubResource("Animation_m311d"),
+&"남자_점프": SubResource("Animation_tg6ek")
+}
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_btloq"]
+size = Vector2(14, 20)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_wjurc"]
+size = Vector2(14, 20)
+
+[node name="캐릭터" type="CharacterBody2D"]
+scale = Vector2(4, 4)
+collision_mask = 2
+script = ExtResource("1_btloq")
+"중력가속도" = 800
+"점프속도" = -450
+
+[node name="기본Body" type="AnimatedSprite2D" parent="."]
+position = Vector2(0, -16)
+sprite_frames = SubResource("SpriteFrames_gypvn")
+animation = &"걷기"
+autoplay = "서있기"
+
+[node name="머리" type="AnimatedSprite2D" parent="."]
+position = Vector2(0, -16)
+sprite_frames = SubResource("SpriteFrames_m311d")
+animation = &"걷기"
+autoplay = "서있기"
+
+[node name="상의" type="AnimatedSprite2D" parent="."]
+position = Vector2(0, -16)
+sprite_frames = SubResource("SpriteFrames_edmkm")
+animation = &"걷기"
+autoplay = "서있기"
+
+[node name="하의" type="AnimatedSprite2D" parent="."]
+position = Vector2(0, -16)
+sprite_frames = SubResource("SpriteFrames_djc8s")
+animation = &"걷기"
+autoplay = "서있기"
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+&"": SubResource("AnimationLibrary_53ebr")
+}
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, -10)
+shape = SubResource("RectangleShape2D_btloq")
+
+[node name="LadderArea2D" type="Area2D" parent="."]
+position = Vector2(-0.25, 0)
+collision_layer = 0
+collision_mask = 4
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="LadderArea2D"]
+position = Vector2(0.25, -10)
+shape = SubResource("RectangleShape2D_wjurc")
+
+[node name="피격Area2D" type="Area2D" parent="."]
+position = Vector2(-0.25, 0)
+collision_layer = 0
+collision_mask = 32
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="피격Area2D"]
+position = Vector2(0.25, -10)
+shape = SubResource("RectangleShape2D_wjurc")
+
+[connection signal="body_entered" from="LadderArea2D" to="." method="_on_body_entered"]
+[connection signal="body_exited" from="LadderArea2D" to="." method="_on_body_exited"]
+[connection signal="body_entered" from="피격Area2D" to="." method="_on_피격_body_entered"]
+[connection signal="body_entered" from="피격Area2D" to="." method="_on_body_entered"]
+[connection signal="body_exited" from="피격Area2D" to="." method="_on_body_exited"]
+[connection signal="body_exited" from="피격Area2D" to="." method="_on_피격_body_exited"]

@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://cgy16f2wk6gtb"
+path="res://.godot/imported/350900__cabled_mess__jump_c_07.wav-23d2159a28c5d4e20511cae3a4aff832.sample"
+
+[deps]
+
+source_file="res://Godot Engine 실전 2D 어드벤처 게임 제작 - 자료/소리/350900__cabled_mess__jump_c_07.wav"
+dest_files=["res://.godot/imported/350900__cabled_mess__jump_c_07.wav-23d2159a28c5d4e20511cae3a4aff832.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2

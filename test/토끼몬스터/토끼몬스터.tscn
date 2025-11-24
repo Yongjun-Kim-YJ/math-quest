@@ -1,0 +1,259 @@
+[gd_scene load_steps=32 format=3 uid="uid://bm0a4j6vu274v"]
+
+[ext_resource type="Script" uid="uid://dm71kpkjw1ldv" path="res://토끼몬스터/토끼몬스터.gd" id="1_sdbmi"]
+[ext_resource type="Texture2D" uid="uid://dcjvyi3vc4n6x" path="res://prototype/enemy.png" id="1_xmrww"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_dyuie"]
+atlas = ExtResource("1_xmrww")
+region = Rect2(192, 192, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_qmvmy"]
+atlas = ExtResource("1_xmrww")
+region = Rect2(256, 192, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_xst1b"]
+atlas = ExtResource("1_xmrww")
+region = Rect2(128, 256, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_sdbmi"]
+atlas = ExtResource("1_xmrww")
+region = Rect2(0, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_wkbs3"]
+atlas = ExtResource("1_xmrww")
+region = Rect2(64, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_nld0e"]
+atlas = ExtResource("1_xmrww")
+region = Rect2(128, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_mjoyo"]
+atlas = ExtResource("1_xmrww")
+region = Rect2(192, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_xmrww"]
+atlas = ExtResource("1_xmrww")
+region = Rect2(0, 64, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_qmkm0"]
+atlas = ExtResource("1_xmrww")
+region = Rect2(64, 64, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_wjn6t"]
+atlas = ExtResource("1_xmrww")
+region = Rect2(128, 64, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_meawo"]
+atlas = ExtResource("1_xmrww")
+region = Rect2(192, 64, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0jebb"]
+atlas = ExtResource("1_xmrww")
+region = Rect2(256, 64, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_36fw5"]
+atlas = ExtResource("1_xmrww")
+region = Rect2(0, 128, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_y80vm"]
+atlas = ExtResource("1_xmrww")
+region = Rect2(64, 128, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_vus17"]
+atlas = ExtResource("1_xmrww")
+region = Rect2(128, 128, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_jikyt"]
+atlas = ExtResource("1_xmrww")
+region = Rect2(192, 128, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_46tca"]
+atlas = ExtResource("1_xmrww")
+region = Rect2(256, 128, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_t88or"]
+atlas = ExtResource("1_xmrww")
+region = Rect2(0, 192, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_7x1r0"]
+atlas = ExtResource("1_xmrww")
+region = Rect2(64, 192, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_hrm4x"]
+atlas = ExtResource("1_xmrww")
+region = Rect2(128, 192, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_kp04r"]
+atlas = ExtResource("1_xmrww")
+region = Rect2(0, 256, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_adodn"]
+atlas = ExtResource("1_xmrww")
+region = Rect2(64, 256, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_76dy0"]
+atlas = ExtResource("1_xmrww")
+region = Rect2(192, 256, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ae8rq"]
+atlas = ExtResource("1_xmrww")
+region = Rect2(256, 256, 64, 64)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_qmkm0"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_dyuie")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_qmvmy")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_xst1b")
+}],
+"loop": false,
+"name": &"공격당함",
+"speed": 7.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_sdbmi")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_wkbs3")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_nld0e")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_mjoyo")
+}],
+"loop": true,
+"name": &"기본",
+"speed": 4.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_xmrww")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_qmkm0")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_wjn6t")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_meawo")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_0jebb")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_36fw5")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_y80vm")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_vus17")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_jikyt")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_46tca")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_t88or")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_7x1r0")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_hrm4x")
+}],
+"loop": true,
+"name": &"달리기",
+"speed": 7.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_kp04r")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_adodn")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_76dy0")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ae8rq")
+}, {
+"duration": 1.0,
+"texture": null
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ae8rq")
+}],
+"loop": false,
+"name": &"사망",
+"speed": 7.0
+}]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_dyuie"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_qmvmy"]
+radius = 80.2247
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_kp04r"]
+radius = 11.0
+height = 36.0
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_sdbmi"]
+radius = 11.0
+height = 24.0
+
+[node name="토끼몬스터" type="CharacterBody2D"]
+scale = Vector2(3, 3)
+collision_layer = 32
+collision_mask = 2
+script = ExtResource("1_sdbmi")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(-3, -16)
+sprite_frames = SubResource("SpriteFrames_qmkm0")
+animation = &"사망"
+autoplay = "기본"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-1, -10)
+shape = SubResource("CircleShape2D_dyuie")
+
+[node name="캐릭터감지범위" type="Area2D" parent="."]
+collision_layer = 32
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="캐릭터감지범위"]
+position = Vector2(-1, -8)
+shape = SubResource("CircleShape2D_qmvmy")
+
+[node name="피격범위" type="Area2D" parent="."]
+collision_layer = 32
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="피격범위"]
+position = Vector2(-1, -11)
+rotation = -1.5708
+shape = SubResource("CapsuleShape2D_kp04r")
+
+[node name="공격범위" type="Area2D" parent="."]
+collision_layer = 32
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="공격범위"]
+position = Vector2(-1, -11)
+rotation = -1.5708
+shape = SubResource("CapsuleShape2D_sdbmi")
+
+[connection signal="body_entered" from="캐릭터감지범위" to="." method="_on_캐릭터감지범위_body_entered"]
+[connection signal="body_entered" from="피격범위" to="." method="_on_피격범위_body_entered"]
+[connection signal="body_exited" from="피격범위" to="." method="_on_피격범위_body_exited"]
+[connection signal="body_entered" from="공격범위" to="." method="_on_피격범위_body_entered"]
+[connection signal="body_exited" from="공격범위" to="." method="_on_피격범위_body_exited"]

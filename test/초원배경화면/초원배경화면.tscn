@@ -1,0 +1,43 @@
+[gd_scene load_steps=6 format=3 uid="uid://b0emilxhkvd50"]
+
+[ext_resource type="Script" uid="uid://8cp826jhkajg" path="res://초원배경화면/초원배경화면.gd" id="1_iyi4c"]
+[ext_resource type="Texture2D" uid="uid://p4nx07x2k6jn" path="res://prototype/background1.png" id="2_nxons"]
+[ext_resource type="Texture2D" uid="uid://cfrn4ha61b21e" path="res://prototype/background2.png" id="3_ea5qv"]
+[ext_resource type="Texture2D" uid="uid://n4xo725d3pan" path="res://prototype/background3.png" id="4_kutwp"]
+[ext_resource type="Texture2D" uid="uid://den2bqfi3s1ia" path="res://prototype/background4.png" id="5_a5ja7"]
+
+[node name="초원배경화면" type="ParallaxBackground"]
+script = ExtResource("1_iyi4c")
+"배경이미지" = ExtResource("2_nxons")
+
+[node name="ParallaxLayer" type="ParallaxLayer" parent="."]
+
+[node name="하늘" type="Sprite2D" parent="ParallaxLayer"]
+texture_repeat = 2
+scale = Vector2(2, 2)
+texture = ExtResource("2_nxons")
+centered = false
+
+[node name="ParallaxLayer2" type="ParallaxLayer" parent="."]
+
+[node name="먼산" type="Sprite2D" parent="ParallaxLayer2"]
+scale = Vector2(2, 2)
+texture = ExtResource("3_ea5qv")
+centered = false
+offset = Vector2(0, 10)
+
+[node name="ParallaxLayer3" type="ParallaxLayer" parent="."]
+
+[node name="초원" type="Sprite2D" parent="ParallaxLayer3"]
+scale = Vector2(2, 2)
+texture = ExtResource("4_kutwp")
+centered = false
+offset = Vector2(0, 25)
+
+[node name="ParallaxLayer4" type="ParallaxLayer" parent="."]
+
+[node name="나무" type="Sprite2D" parent="ParallaxLayer4"]
+scale = Vector2(2, 2)
+texture = ExtResource("5_a5ja7")
+centered = false
+offset = Vector2(0, 131)

@@ -1,0 +1,106 @@
+[gd_scene load_steps=15 format=3 uid="uid://be5qtgrdkllxe"]
+
+[ext_resource type="Script" uid="uid://c7lmv4xvx7oul" path="res://다음맵이동포탈/다음맵이동포탈.gd" id="1_gkk8d"]
+[ext_resource type="Texture2D" uid="uid://cn854aisv1c4r" path="res://Godot Engine 실전 2D 어드벤처 게임 제작 - 자료/아이템/Checkpoints/End/End (Idle).png" id="3_34f23"]
+[ext_resource type="Texture2D" uid="uid://cbi55xdajwcg4" path="res://Godot Engine 실전 2D 어드벤처 게임 제작 - 자료/아이템/Checkpoints/End/End (Pressed) (64x64).png" id="4_kqcpa"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_erfu6"]
+atlas = ExtResource("4_kqcpa")
+region = Rect2(0, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_okyhq"]
+atlas = ExtResource("4_kqcpa")
+region = Rect2(64, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_pb818"]
+atlas = ExtResource("4_kqcpa")
+region = Rect2(128, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_k4iwl"]
+atlas = ExtResource("4_kqcpa")
+region = Rect2(192, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_fj0ep"]
+atlas = ExtResource("4_kqcpa")
+region = Rect2(256, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_5hrwk"]
+atlas = ExtResource("4_kqcpa")
+region = Rect2(320, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_x0n4u"]
+atlas = ExtResource("4_kqcpa")
+region = Rect2(384, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0cby8"]
+atlas = ExtResource("4_kqcpa")
+region = Rect2(448, 0, 64, 64)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_4bo8q"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("3_34f23")
+}],
+"loop": false,
+"name": &"기본",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_erfu6")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_okyhq")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_pb818")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_k4iwl")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_fj0ep")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_5hrwk")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_x0n4u")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_0cby8")
+}],
+"loop": true,
+"name": &"활성화",
+"speed": 20.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_bjrr2"]
+size = Vector2(34, 8)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_poi41"]
+size = Vector2(20, 36)
+
+[node name="다음맵이동포탈" type="StaticBody2D"]
+scale = Vector2(4, 4)
+collision_layer = 2
+script = ExtResource("1_gkk8d")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(0, -32)
+sprite_frames = SubResource("SpriteFrames_4bo8q")
+animation = &"기본"
+autoplay = "기본"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, -4)
+shape = SubResource("RectangleShape2D_bjrr2")
+
+[node name="캐릭터충돌판정" type="Area2D" parent="."]
+position = Vector2(0, -32)
+collision_layer = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="캐릭터충돌판정"]
+position = Vector2(0, 6)
+shape = SubResource("RectangleShape2D_poi41")
