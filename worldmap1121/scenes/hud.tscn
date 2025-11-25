@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://bfps7yesco61a"]
+
+[node name="CanvasLayer" type="CanvasLayer"]
+
+[node name="top" type="HBoxContainer" parent="."]
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="bottom" type="HBoxContainer" parent="."]
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="minimap(Control)" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
