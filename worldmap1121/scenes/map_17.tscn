@@ -180,67 +180,67 @@ texture = ExtResource("10_pkalb")
 sources/0 = SubResource("TileSetAtlasSource_nenoi")
 
 [node name="map17" type="Node2D"]
-position = Vector2(172, 73)
+position = Vector2(201, 82)
 
 [node name="ParallaxBackground" type="ParallaxBackground" parent="."]
 
 [node name="ParallaxLayer" type="ParallaxLayer" parent="ParallaxBackground"]
-position = Vector2(172, 73)
+position = Vector2(201, 82)
 
 [node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer"]
 texture = ExtResource("1_dji5b")
 
 [node name="ParallaxLayer2" type="ParallaxLayer" parent="ParallaxBackground"]
-position = Vector2(172, 73)
+position = Vector2(201, 82)
 
 [node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer2"]
 position = Vector2(0, -41)
 texture = ExtResource("2_3x4ma")
 
 [node name="ParallaxLayer3" type="ParallaxLayer" parent="ParallaxBackground"]
-position = Vector2(172, 73)
+position = Vector2(201, 82)
 
 [node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer3"]
 position = Vector2(0, 21)
 texture = ExtResource("3_ury4k")
 
 [node name="ParallaxLayer4" type="ParallaxLayer" parent="ParallaxBackground"]
-position = Vector2(172, 73)
+position = Vector2(201, 82)
 
 [node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer4"]
 position = Vector2(0, 12)
 texture = ExtResource("4_7o57h")
 
 [node name="ParallaxLayer5" type="ParallaxLayer" parent="ParallaxBackground"]
-position = Vector2(172, 73)
+position = Vector2(201, 82)
 
 [node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer5"]
 position = Vector2(0, 38)
 texture = ExtResource("5_rrmci")
 
 [node name="ParallaxLayer6" type="ParallaxLayer" parent="ParallaxBackground"]
-position = Vector2(172, 73)
+position = Vector2(201, 82)
 
 [node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer6"]
 position = Vector2(0, 65)
 texture = ExtResource("6_t8yfx")
 
 [node name="ParallaxLayer7" type="ParallaxLayer" parent="ParallaxBackground"]
-position = Vector2(172, 73)
+position = Vector2(201, 82)
 
 [node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer7"]
 position = Vector2(0, 71)
 texture = ExtResource("7_6u0a1")
 
 [node name="ParallaxLayer8" type="ParallaxLayer" parent="ParallaxBackground"]
-position = Vector2(172, 73)
+position = Vector2(201, 82)
 
 [node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer8"]
 position = Vector2(0, 120)
 texture = ExtResource("8_uscbe")
 
 [node name="ParallaxLayer9" type="ParallaxLayer" parent="ParallaxBackground"]
-position = Vector2(172, 73)
+position = Vector2(201, 82)
 
 [node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer9"]
 position = Vector2(0, 182)
