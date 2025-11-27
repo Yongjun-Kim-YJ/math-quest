@@ -136,7 +136,7 @@ position = Vector2(248.237, 435.652)
 scale = Vector2(0.143128, 0.164735)
 sprite_frames = SubResource("SpriteFrames_tel4y")
 autoplay = "default"
-frame_progress = 0.779735
+frame_progress = 0.174219
 speed_scale = 0.295
 
 [node name="ParallaxLayer3" type="ParallaxLayer" parent="Node2D2"]

@@ -1,53 +1,52 @@
-[gd_scene load_steps=18 format=3 uid="uid://ovwfmqe8kdsy"]
+[gd_scene load_steps=17 format=3 uid="uid://c8vnwqf7y7ht0"]
 
-[ext_resource type="Texture2D" uid="uid://bn4n3jef60ie4" path="res://1.png" id="1_kavpc"]
-[ext_resource type="Texture2D" uid="uid://b8hoxn5bclfxx" path="res://3.png" id="2_8p7uo"]
-[ext_resource type="Texture2D" uid="uid://bttg5vhyobq68" path="res://4.png" id="3_wvppj"]
-[ext_resource type="Texture2D" uid="uid://dhvbu0kwt3vyw" path="res://assets/backgrounds/bg005.png" id="4_mtufi"]
-[ext_resource type="Texture2D" uid="uid://cxesa0eaiir8d" path="res://hero_run1-Sheet.png" id="5_kavpc"]
+[ext_resource type="Texture2D" uid="uid://bn4n3jef60ie4" path="res://1.png" id="1_vhbaf"]
+[ext_resource type="Texture2D" uid="uid://b8hoxn5bclfxx" path="res://3.png" id="2_v6ms7"]
+[ext_resource type="Texture2D" uid="uid://bttg5vhyobq68" path="res://4.png" id="3_rpvs4"]
+[ext_resource type="Texture2D" uid="uid://cxesa0eaiir8d" path="res://hero_run1-Sheet.png" id="5_6ejck"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_80u0c"]
-atlas = ExtResource("5_kavpc")
+atlas = ExtResource("5_6ejck")
 region = Rect2(0, 0, 360, 360)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_kuyf1"]
-atlas = ExtResource("5_kavpc")
+atlas = ExtResource("5_6ejck")
 region = Rect2(360, 0, 360, 360)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_3dh8v"]
-atlas = ExtResource("5_kavpc")
+atlas = ExtResource("5_6ejck")
 region = Rect2(720, 0, 360, 360)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_fdy8s"]
-atlas = ExtResource("5_kavpc")
+atlas = ExtResource("5_6ejck")
 region = Rect2(1080, 0, 360, 360)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_n1mrw"]
-atlas = ExtResource("5_kavpc")
+atlas = ExtResource("5_6ejck")
 region = Rect2(1440, 0, 360, 360)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_0aa7u"]
-atlas = ExtResource("5_kavpc")
+atlas = ExtResource("5_6ejck")
 region = Rect2(1800, 0, 360, 360)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_r6wnq"]
-atlas = ExtResource("5_kavpc")
+atlas = ExtResource("5_6ejck")
 region = Rect2(2160, 0, 360, 360)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_e5h45"]
-atlas = ExtResource("5_kavpc")
+atlas = ExtResource("5_6ejck")
 region = Rect2(2520, 0, 360, 360)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_h4g7m"]
-atlas = ExtResource("5_kavpc")
+atlas = ExtResource("5_6ejck")
 region = Rect2(2880, 0, 360, 360)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_6p4od"]
-atlas = ExtResource("5_kavpc")
+atlas = ExtResource("5_6ejck")
 region = Rect2(3240, 0, 360, 360)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_aatuj"]
-atlas = ExtResource("5_kavpc")
+atlas = ExtResource("5_6ejck")
 region = Rect2(3600, 0, 360, 360)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_8p7uo"]
@@ -100,7 +99,7 @@ animations = [{
 [node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground2/ParallaxLayer7"]
 position = Vector2(471.994, 289.198)
 scale = Vector2(1.78821, 1.86298)
-texture = ExtResource("1_kavpc")
+texture = ExtResource("1_vhbaf")
 
 [node name="ParallaxLayer" type="ParallaxLayer" parent="ParallaxBackground2"]
 position = Vector2(20, -8)
@@ -108,7 +107,7 @@ position = Vector2(20, -8)
 [node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground2/ParallaxLayer"]
 position = Vector2(464, 216)
 scale = Vector2(1.87529, 2.13079)
-texture = ExtResource("2_8p7uo")
+texture = ExtResource("2_v6ms7")
 
 [node name="ParallaxLayer2" type="ParallaxLayer" parent="ParallaxBackground2"]
 position = Vector2(20, -8)
@@ -116,17 +115,7 @@ position = Vector2(20, -8)
 [node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground2/ParallaxLayer2"]
 position = Vector2(460, 317)
 scale = Vector2(1.73903, 1.45699)
-texture = ExtResource("3_wvppj")
-
-[node name="ParallaxLayer5" type="ParallaxLayer" parent="ParallaxBackground2"]
-visible = false
-position = Vector2(20, -8)
-
-[node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground2/ParallaxLayer5"]
-visible = false
-position = Vector2(665, 112)
-scale = Vector2(4.10795, 3.48677)
-texture = ExtResource("4_mtufi")
+texture = ExtResource("3_rpvs4")
 
 [node name="Node2D" type="Node2D" parent="."]
 
@@ -135,5 +124,5 @@ position = Vector2(199.618, 412.076)
 scale = Vector2(0.146564, 0.139312)
 sprite_frames = SubResource("SpriteFrames_8p7uo")
 autoplay = "default"
-frame_progress = 0.257119
+frame_progress = 0.888419
 speed_scale = 0.295

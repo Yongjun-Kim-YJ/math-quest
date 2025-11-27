@@ -1,6 +1,7 @@
-[gd_scene load_steps=20 format=3 uid="uid://jhqdkbsb50tk"]
+[gd_scene load_steps=21 format=3 uid="uid://jhqdkbsb50tk"]
 
 [ext_resource type="Texture2D" uid="uid://bkmbj6e4ixtsd" path="res://bgsaveslot.png" id="1_oh3tc"]
+[ext_resource type="Texture2D" uid="uid://bn4n3jef60ie4" path="res://1.png" id="2_cx5q2"]
 [ext_resource type="Texture2D" uid="uid://yny0evb010ip" path="res://saveslot22.png" id="2_o5o8f"]
 [ext_resource type="Texture2D" uid="uid://cjt4yejuwoof6" path="res://saveslot11.png" id="2_oh3tc"]
 [ext_resource type="Texture2D" uid="uid://cys8xqqt0ioju" path="res://saveslot1.png" id="3_o5o8f"]
@@ -92,6 +93,13 @@ axis_stretch_vertical = 1
 position = Vector2(383, 245)
 scale = Vector2(200.26, 83.6122)
 texture = ExtResource("1_oh3tc")
+
+[node name="ParallaxLayer7" type="ParallaxLayer" parent="."]
+
+[node name="Sprite2D" type="Sprite2D" parent="ParallaxLayer7"]
+position = Vector2(471.994, 289.198)
+scale = Vector2(1.78821, 1.86298)
+texture = ExtResource("2_cx5q2")
 
 [node name="Control" type="Control" parent="."]
 layout_mode = 3

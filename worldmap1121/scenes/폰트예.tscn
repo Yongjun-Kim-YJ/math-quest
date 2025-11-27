@@ -3,7 +3,7 @@
 [ext_resource type="FontFile" uid="uid://c2464a7mlci6" path="res://fonts/neodgm.ttf" id="1_xfs86"]
 [ext_resource type="FontFile" uid="uid://krwy057ivt7m" path="res://fonts/PF스타더스트 3.0.ttf" id="2_5kptg"]
 [ext_resource type="FontFile" uid="uid://i0gqihvfpvrq" path="res://fonts/Ramche.otf" id="3_clh2c"]
-[ext_resource type="FontFile" uid="uid://b763xp3do8d46" path="res://fonts/DOSMyungjo.ttf" id="4_5kptg"]
+[ext_resource type="FontFile" uid="uid://qgrsv3k5yf3o" path="res://fonts/PF스타더스트 3.0 S Bold.ttf" id="4_clh2c"]
 [ext_resource type="Texture2D" uid="uid://cxesa0eaiir8d" path="res://hero_run1-Sheet.png" id="5_clh2c"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_80u0c"]
@@ -99,6 +99,7 @@ offset_bottom = 8.0
 theme_override_fonts/font = ExtResource("1_xfs86")
 theme_override_font_sizes/font_size = 15
 text = "동해물과 백두산이 마르고 닳도록 "
+metadata/_edit_use_anchors_ = true
 
 [node name="Button2" type="Button" parent="."]
 offset_left = 3.0
@@ -108,6 +109,7 @@ offset_bottom = 53.0
 theme_override_fonts/font = ExtResource("2_5kptg")
 theme_override_font_sizes/font_size = 15
 text = "동해물과 백두산이 마르고 닳도"
+metadata/_edit_use_anchors_ = true
 
 [node name="Button3" type="Button" parent="."]
 offset_left = 5.0
@@ -117,15 +119,17 @@ offset_bottom = 90.0
 theme_override_fonts/font = ExtResource("3_clh2c")
 theme_override_font_sizes/font_size = 15
 text = "동해물과 백두산"
+metadata/_edit_use_anchors_ = true
 
 [node name="Button4" type="Button" parent="."]
 offset_left = 8.0
 offset_top = 108.0
 offset_right = 227.0
 offset_bottom = 132.0
-theme_override_fonts/font = ExtResource("4_5kptg")
-theme_override_font_sizes/font_size = 15
-text = "가나다라마바사 한글폰트Hello"
+theme_override_fonts/font = ExtResource("4_clh2c")
+theme_override_font_sizes/font_size = 34
+text = "동해물과 백두산이 가나다라마바사 한글폰트Hello"
+metadata/_edit_use_anchors_ = true
 
 [node name="Node2D" type="Node2D" parent="."]
 
