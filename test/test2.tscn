@@ -1,10 +1,10 @@
 [gd_scene load_steps=2 format=3 uid="uid://bnk5c0d6fi55"]
 
-[ext_resource type="Texture2D" uid="uid://7ejjcenfy8vf" path="res://bg101.png" id="1_vfvc6"]
+[ext_resource type="Texture2D" uid="uid://dy2dgqk0xywjr" path="res://bg101.png" id="1_vfvc6"]
 
 [node name="Node2D" type="Node2D"]
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-position = Vector2(804, 492)
-scale = Vector2(1, 2.66406)
+position = Vector2(956, 525)
+scale = Vector2(2.10421, 4.6543)
 texture = ExtResource("1_vfvc6")
