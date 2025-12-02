@@ -242,7 +242,7 @@ texture = ExtResource("5_75stv")
 [sub_resource type="TileSet" id="TileSet_hbcqh"]
 sources/0 = SubResource("TileSetAtlasSource_mulij")
 
-[node name="map15" type="Node2D"]
+[node name="map_15" type="Node2D"]
 
 [node name="ParallaxBackground" type="ParallaxBackground" parent="."]
 
@@ -275,7 +275,9 @@ scale = Vector2(0.55, 0.55)
 texture = ExtResource("4_e6ppl")
 
 [node name="terrain" type="TileMapLayer" parent="."]
+scale = Vector2(4, 4)
 tile_set = SubResource("TileSet_hp4uf")
 
 [node name="decor" type="TileMapLayer" parent="."]
+scale = Vector2(4, 4)
 tile_set = SubResource("TileSet_hbcqh")

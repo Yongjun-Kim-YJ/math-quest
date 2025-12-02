@@ -277,13 +277,17 @@ scale = Vector2(7, 7)
 texture = ExtResource("9_bbiqe")
 
 [node name="back" type="TileMapLayer" parent="."]
+scale = Vector2(4, 4)
 tile_set = SubResource("TileSet_vh15b")
 
 [node name="terrain" type="TileMapLayer" parent="."]
+scale = Vector2(4, 4)
 tile_set = SubResource("TileSet_vmock")
 
 [node name="ladder" type="TileMapLayer" parent="."]
+scale = Vector2(4, 4)
 tile_set = SubResource("TileSet_7hhoh")
 
 [node name="decor" type="TileMapLayer" parent="."]
+scale = Vector2(4, 4)
 tile_set = SubResource("TileSet_o4y2v")
