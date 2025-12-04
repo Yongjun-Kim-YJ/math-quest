@@ -13,7 +13,7 @@ extends CharacterBody2D
 @onready var 머리 = $"머리"
 @onready var 상의 = $"상의"
 @onready var 하의 = $"하의"
-@onready var ladder_layer: TileMapLayer = $"../사다리"
+@onready var ladder_layer: TileMapLayer = $"../ladder"
 @export var 체력 = 100
 var climb_move = "사다리이동"
 var climb_idle = "사다리정지"
