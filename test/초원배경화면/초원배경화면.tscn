@@ -7,8 +7,11 @@
 [ext_resource type="Texture2D" uid="uid://den2bqfi3s1ia" path="res://prototype/background4.png" id="5_a5ja7"]
 
 [node name="초원배경화면" type="ParallaxBackground"]
+scale = Vector2(1.5, 1.5)
+transform = Transform2D(1.5, 0, 0, 1.5, 0, 0)
 script = ExtResource("1_iyi4c")
 "배경이미지" = ExtResource("2_nxons")
+"스크롤속도X" = 231
 
 [node name="ParallaxLayer" type="ParallaxLayer" parent="."]
 

@@ -1,0 +1,237 @@
+[gd_scene load_steps=15 format=4 uid="uid://bl70h7c453hgw"]
+
+[ext_resource type="PackedScene" uid="uid://b0emilxhkvd50" path="res://초원배경화면/초원배경화면.tscn" id="1_5vxm3"]
+[ext_resource type="Texture2D" uid="uid://bnjmtiy14qnml" path="res://prototype/tileset.png" id="2_0q0kb"]
+[ext_resource type="PackedScene" uid="uid://d2h551miotvf2" path="res://포탈/포탈.tscn" id="3_rh0ng"]
+[ext_resource type="PackedScene" uid="uid://bk6jsfv8jftno" path="res://수학문제화면/수학문제화면.tscn" id="4_0q0kb"]
+[ext_resource type="PackedScene" uid="uid://c1rqjlym1luix" path="res://수학문제/수학문제.tscn" id="4_skddf"]
+[ext_resource type="PackedScene" uid="uid://vvkd4ebc3hl1" path="res://레벨2/레벨2.tscn" id="4_yk7d2"]
+[ext_resource type="Script" uid="uid://0yhcnufj68gl" path="res://Test레벨1/minimap_ui.gd" id="5_5vxm3"]
+[ext_resource type="PackedScene" uid="uid://bqabb3t2x85sq" path="res://캐릭터/캐릭터.tscn" id="5_yk7d2"]
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_fsjfo"]
+texture = ExtResource("2_0q0kb")
+0:0/0 = 0
+1:0/0 = 0
+2:0/0 = 0
+3:0/0 = 0
+6:0/0 = 0
+7:0/0 = 0
+8:0/0 = 0
+9:0/0 = 0
+0:1/0 = 0
+1:1/0 = 0
+2:1/0 = 0
+3:1/0 = 0
+4:1/0 = 0
+5:1/0 = 0
+6:1/0 = 0
+7:1/0 = 0
+8:1/0 = 0
+9:1/0 = 0
+10:1/0 = 0
+0:2/0 = 0
+1:2/0 = 0
+2:2/0 = 0
+4:2/0 = 0
+5:2/0 = 0
+8:2/0 = 0
+9:2/0 = 0
+10:2/0 = 0
+0:3/0 = 0
+1:3/0 = 0
+2:3/0 = 0
+4:3/0 = 0
+5:3/0 = 0
+8:3/0 = 0
+9:3/0 = 0
+10:3/0 = 0
+4:0/0 = 0
+5:0/0 = 0
+
+[sub_resource type="TileSet" id="TileSet_qynyq"]
+sources/0 = SubResource("TileSetAtlasSource_fsjfo")
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_vv5hj"]
+texture = ExtResource("2_0q0kb")
+0:0/0 = 0
+1:0/0 = 0
+2:0/0 = 0
+3:0/0 = 0
+4:0/0 = 0
+5:0/0 = 0
+6:0/0 = 0
+7:0/0 = 0
+8:0/0 = 0
+9:0/0 = 0
+0:1/0 = 0
+0:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+1:1/0 = 0
+1:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+2:1/0 = 0
+2:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+3:1/0 = 0
+3:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+3:1/0/physics_layer_0/polygon_0/one_way = true
+4:1/0 = 0
+4:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+4:1/0/physics_layer_0/polygon_0/one_way = true
+5:1/0 = 0
+5:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+5:1/0/physics_layer_0/polygon_0/one_way = true
+6:1/0 = 0
+6:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+7:1/0 = 0
+7:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+7:1/0/physics_layer_0/polygon_0/one_way = true
+8:1/0 = 0
+8:1/0/physics_layer_1/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+9:1/0 = 0
+9:1/0/physics_layer_1/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+10:1/0 = 0
+10:1/0/physics_layer_1/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+0:2/0 = 0
+0:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+1:2/0 = 0
+1:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+2:2/0 = 0
+2:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+4:2/animation_columns = 2
+4:2/animation_frame_0/duration = 1.0
+4:2/animation_frame_1/duration = 1.0
+4:2/0 = 0
+8:2/0 = 0
+8:2/0/physics_layer_1/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+9:2/0 = 0
+9:2/0/physics_layer_1/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+10:2/0 = 0
+10:2/0/physics_layer_1/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+0:3/0 = 0
+0:3/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+1:3/0 = 0
+1:3/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+2:3/0 = 0
+2:3/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+4:3/0 = 0
+5:3/0 = 0
+5:3/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, -3.26444, -8, -3.36336)
+5:3/0/physics_layer_0/polygon_0/one_way = true
+8:3/0 = 0
+8:3/0/physics_layer_1/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+9:3/0 = 0
+9:3/0/physics_layer_1/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+10:3/0 = 0
+10:3/0/physics_layer_1/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+6:2/0 = 0
+
+[sub_resource type="TileSet" id="TileSet_lp1le"]
+physics_layer_0/collision_layer = 2
+physics_layer_1/collision_layer = 4
+physics_layer_1/collision_mask = 0
+sources/0 = SubResource("TileSetAtlasSource_vv5hj")
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_j1son"]
+texture = ExtResource("2_0q0kb")
+8:1/0 = 0
+8:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+8:1/0/custom_data_0 = true
+8:1/0/custom_data_1 = true
+9:1/0 = 0
+9:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+9:1/0/custom_data_0 = true
+9:1/0/custom_data_2 = true
+10:1/0 = 0
+10:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+10:1/0/custom_data_0 = true
+10:1/0/custom_data_2 = true
+8:2/0 = 0
+8:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+8:2/0/custom_data_0 = true
+8:2/0/custom_data_1 = true
+9:2/0 = 0
+9:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+9:2/0/custom_data_0 = true
+9:2/0/custom_data_2 = true
+10:2/0 = 0
+10:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+10:2/0/custom_data_0 = true
+10:2/0/custom_data_2 = true
+8:3/0 = 0
+8:3/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+8:3/0/custom_data_0 = true
+8:3/0/custom_data_1 = true
+9:3/0 = 0
+9:3/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+9:3/0/custom_data_0 = true
+9:3/0/custom_data_2 = true
+10:3/0 = 0
+10:3/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+10:3/0/custom_data_0 = true
+10:3/0/custom_data_2 = true
+
+[sub_resource type="TileSet" id="TileSet_8n31y"]
+physics_layer_0/collision_layer = 4
+physics_layer_0/collision_mask = 0
+custom_data_layer_0/name = "is_ladder"
+custom_data_layer_0/type = 1
+custom_data_layer_1/name = "rope"
+custom_data_layer_1/type = 1
+custom_data_layer_2/name = "ladder"
+custom_data_layer_2/type = 1
+sources/0 = SubResource("TileSetAtlasSource_j1son")
+
+[node name="테스트레벨2" type="Node2D"]
+
+[node name="초원배경화면" parent="." instance=ExtResource("1_5vxm3")]
+
+[node name="수풀" type="TileMapLayer" parent="."]
+scale = Vector2(4, 4)
+tile_map_data = PackedByteArray("AAAQAAkAAAAGAAAAAAARAAkAAAAHAAAAAAAGAAgAAAAIAAAAAAAHAAgAAAAJAAAAAAAPAAYAAAACAAAAAAAMAAEAAAAAAAAAAAAIAAkAAAABAAAAAAA=")
+tile_set = SubResource("TileSet_qynyq")
+
+[node name="포탈" parent="." instance=ExtResource("3_rh0ng")]
+position = Vector2(1217, 642)
+"다음레벨" = ExtResource("4_yk7d2")
+
+[node name="땅" type="TileMapLayer" parent="."]
+scale = Vector2(4, 4)
+tile_map_data = PackedByteArray("AAD/////AAABAAIAAAD//wAAAAABAAIAAAD//wEAAAABAAIAAAD//wIAAAABAAIAAAD//wMAAAABAAIAAAD//wQAAAABAAIAAAD//wUAAAABAAIAAAD//wYAAAABAAIAAAD//wcAAAABAAIAAAD//wgAAAABAAIAAAD//wkAAAABAAIAAAD//woAAAABAAIAAAD//wsAAAABAAIAAAD//wwAAAABAAIAAAAAAAwAAAABAAIAAAABAAwAAAABAAIAAAACAAwAAAABAAIAAAADAAwAAAABAAIAAAAEAAwAAAABAAIAAAAFAAwAAAABAAIAAAAGAAwAAAABAAIAAAAHAAwAAAABAAIAAAAIAAwAAAABAAIAAAAJAAwAAAABAAIAAAAKAAwAAAABAAIAAAALAAwAAAABAAIAAAAMAAwAAAABAAIAAAANAAwAAAABAAIAAAAOAAwAAAABAAIAAAAPAAwAAAABAAIAAAAQAAwAAAABAAIAAAARAAwAAAABAAIAAAASAAwAAAABAAIAAAATAAwAAAABAAIAAAAUAAwAAAABAAIAAAAUAAsAAAABAAIAAAAUAAoAAAABAAIAAAAUAAkAAAABAAIAAAAUAAgAAAABAAIAAAAUAAcAAAABAAIAAAAUAAYAAAABAAIAAAAUAAUAAAABAAIAAAAUAAQAAAABAAIAAAAUAAMAAAABAAIAAAAUAAIAAAABAAIAAAAUAAEAAAABAAIAAAAUAAAAAAABAAIAAAAUAP//AAABAAIAAAAUAP7/AAABAAIAAAAUAP3/AAABAAIAAAATAP3/AAABAAIAAAASAP3/AAABAAIAAAARAP3/AAABAAIAAAAQAP3/AAABAAIAAAAPAP3/AAABAAIAAAAOAP3/AAABAAIAAAANAP3/AAABAAIAAAAMAP3/AAABAAIAAAALAP3/AAABAAIAAAAKAP3/AAABAAIAAAAJAP3/AAABAAIAAAAIAP3/AAABAAIAAAAHAP3/AAABAAIAAAAGAP3/AAABAAIAAAAFAP3/AAABAAIAAAAEAP3/AAABAAIAAAADAP3/AAABAAIAAAACAP3/AAABAAIAAAABAP3/AAABAAIAAAAAAP3/AAABAAIAAAD///3/AAABAAIAAAD///7/AAABAAIAAAAAAAsAAAAEAAMAAAABAAsAAAAEAAMAAAACAAsAAAAEAAMAAAADAAsAAAAEAAMAAAAEAAsAAAABAAIAAAAFAAsAAAABAAIAAAAGAAsAAAABAAIAAAAHAAsAAAABAAIAAAACAAoAAAAEAAIAAAADAAoAAAAEAAIAAAAEAAoAAAAAAAEAAAAFAAoAAAABAAEAAAAGAAoAAAABAAEAAAAHAAoAAAABAAEAAAAIAAoAAAABAAEAAAAIAAsAAAABAAIAAAAJAAoAAAABAAEAAAAKAAoAAAABAAEAAAALAAoAAAABAAEAAAAJAAsAAAABAAIAAAAKAAsAAAABAAIAAAALAAsAAAACAAIAAAAAAAIAAAAEAAEAAAABAAIAAAAEAAEAAAACAAIAAAAFAAEAAAADAAQAAAAEAAEAAAAEAAQAAAAEAAEAAAAFAAQAAAAFAAEAAAACAAQAAAAEAAEAAAABAAQAAAADAAEAAAAAAAoAAAAEAAIAAAABAAoAAAAEAAIAAAAMAAsAAAABAAIAAAANAAsAAAABAAIAAAAOAAsAAAABAAIAAAAPAAsAAAABAAIAAAAQAAsAAAABAAIAAAARAAsAAAABAAIAAAASAAsAAAABAAIAAAATAAsAAAABAAIAAAAMAAoAAAABAAEAAAANAAoAAAABAAEAAAAOAAoAAAABAAEAAAAPAAoAAAABAAEAAAAQAAoAAAABAAEAAAARAAoAAAABAAEAAAASAAoAAAABAAEAAAATAAoAAAABAAEAAAAFAAkAAAAAAAEAAAAGAAkAAAABAAEAAAAHAAkAAAABAAEAAAAIAAkAAAABAAEAAAAJAAkAAAACAAEAAAAAAAgAAAAFAAMAAAABAAgAAAAFAAMAAAACAAgAAAAFAAMAAAADAAgAAAAFAAMAAAALAAgAAAAHAAEAAAANAAcAAAAHAAEAAAAPAAcAAAAHAAEAAAARAAYAAAAHAAEAAAATAAUAAAAHAAEAAAASAAMAAAAHAAEAAAAQAAMAAAAHAAEAAAAOAAIAAAAHAAEAAAAMAAIAAAAHAAEAAAALAAQAAAAHAAEAAAAJAAMAAAAFAAEAAAAHAAAAAAAGAAEAAAAHAAEAAAAGAAEAAAAHAAIAAAAGAAEAAAAIAAMAAAADAAEAAAA=")
+tile_set = SubResource("TileSet_lp1le")
+
+[node name="사다리" type="TileMapLayer" parent="."]
+scale = Vector2(4, 4)
+tile_map_data = PackedByteArray("AAAEAAQAAAAIAAEAAAAEAAUAAAAIAAIAAAAEAAYAAAAIAAIAAAAEAAcAAAAIAAMAAAA=")
+tile_set = SubResource("TileSet_8n31y")
+
+[node name="수학문제" parent="." instance=ExtResource("4_skddf")]
+position = Vector2(577, 147)
+"문제UI씬" = ExtResource("4_0q0kb")
+
+[node name="캐릭터" parent="." instance=ExtResource("5_yk7d2")]
+position = Vector2(52, 127)
+
+[node name="MinimapUI" type="CanvasLayer" parent="."]
+visible = false
+script = ExtResource("5_5vxm3")
+
+[node name="SubViewportContainer" type="SubViewportContainer" parent="MinimapUI"]
+layout_direction = 2
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -520.0
+offset_top = 20.0
+offset_right = -200.0
+offset_bottom = 212.0
+grow_horizontal = 0
+scale = Vector2(0.6, 0.6)
+
+[node name="SubViewport" type="SubViewport" parent="MinimapUI/SubViewportContainer"]
+transparent_bg = true
+handle_input_locally = false
+size = Vector2i(320, 192)
+render_target_update_mode = 0
+
+[node name="MinimapCamera2D" type="Camera2D" parent="MinimapUI/SubViewportContainer/SubViewport"]
+anchor_mode = 0
+zoom = Vector2(0.25, 0.25)

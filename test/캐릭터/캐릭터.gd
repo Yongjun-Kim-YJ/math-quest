@@ -8,11 +8,12 @@ extends CharacterBody2D
 @export var on_ladder = false
 @export var is_climbing = false
 @export var desired_x_pos: float
+@export var is_attacking = false
 @onready var 스프라이트 = $"기본Body"
 @onready var 머리 = $"머리"
 @onready var 상의 = $"상의"
 @onready var 하의 = $"하의"
-@onready var ladder_layer: TileMapLayer = $"../사다리"
+@onready var ladder_layer: TileMapLayer = $"../ladder"
 @export var 체력 = 100
 var climb_move = "사다리이동"
 var climb_idle = "사다리정지"
@@ -34,11 +35,11 @@ func _movement(delta):
 	# --- 사다리 시작(타일 직접 검사): 위/아래 키를 "처음" 눌렀을 때 ---
 	if not is_climbing:
 		if Input.is_action_just_pressed("ui_up"):
-			pass
-			#_try_start_climb(1)    # 위로 시작
+			#pass
+			_try_start_climb(1)    # 위로 시작
 		elif Input.is_action_just_pressed("ui_down"):
-			pass
-			#_try_start_climb(-1)   # 아래로 시작(발밑 셀 검사)
+			#pass
+			_try_start_climb(-1)   # 아래로 시작(발밑 셀 검사)
 	
 	# --- 사다리 이동 중 ---
 	if is_climbing:
@@ -59,12 +60,21 @@ func _movement(delta):
 		if Input.is_action_pressed("ui_down"):
 			velocity.y = 사다리속도
 			스프라이트.play(climb_move)
+			머리.play(climb_move)
+			상의.play(climb_move)
+			하의.play(climb_move)
 		elif Input.is_action_pressed("ui_up"):
 			velocity.y = -사다리속도
 			스프라이트.play(climb_move)
+			머리.play(climb_move)
+			상의.play(climb_move)
+			하의.play(climb_move)
 		else:
 			velocity.y = 0
 			스프라이트.play(climb_idle)
+			머리.play(climb_idle)
+			상의.play(climb_idle)
+			하의.play(climb_idle)
 
 	else:
 		# 평상시 이동 로직
@@ -90,33 +100,55 @@ func _movement(delta):
 	# 애니메이션 좌우 설정
 	if last_dir == 1:
 		스프라이트.flip_h = false
+		머리.flip_h = false
+		상의.flip_h = false
+		하의.flip_h = false
 	elif last_dir == -1:
 		스프라이트.flip_h = true
+		머리.flip_h = true
+		상의.flip_h = true
+		하의.flip_h = true
 	
-	# 캐릭터가 바닥에 있을 때
-	if is_on_floor() == true:
-		if velocity.x == 0:
-			#스프라이트.play("서있기")
-			스프라이트.play("서있기")
-			머리.play("서있기")
-			상의.play("서있기")
-			하의.play("서있기")
+	if Input.is_action_just_pressed("공격") and not is_climbing:
+		is_attacking = true
+		스프라이트.play("펀치")
+		머리.play("펀치")
+		상의.play("펀치")
+		하의.play("펀치")
+		await 스프라이트.animation_finished
+		is_attacking = false
+	
+	if !is_attacking:
+		# 캐릭터가 바닥에 있을 때
+		if is_on_floor() == true:
+			if velocity.x == 0:
+				#스프라이트.play("서있기")
+				스프라이트.play("서있기")
+				머리.play("서있기")
+				상의.play("서있기")
+				하의.play("서있기")
+			else:
+				#스프라이트.play("걷기")
+				스프라이트.play("걷기")
+				머리.play("걷기")
+				상의.play("걷기")
+				하의.play("걷기")
+		# 캐릭터가 바닥에 있지 않을 때
 		else:
-			#스프라이트.play("걷기")
-			스프라이트.play("걷기")
-			머리.play("걷기")
-			상의.play("걷기")
-			하의.play("걷기")
-	# 캐릭터가 바닥에 있지 않을 때
-	else:
-		if is_climbing:
-			pass
-				
-		else:
-			if velocity.y > 0:
-				스프라이트.play("떨어지기")
-			elif velocity.y < 0:
-				스프라이트.play("점프")
+			if is_climbing:
+				pass
+					
+			else:
+				if velocity.y > 0:
+					스프라이트.play("떨어지기")
+					머리.play("떨어지기")
+					상의.play("떨어지기")
+					하의.play("떨어지기")
+				elif velocity.y < 0:
+					스프라이트.play("점프")
+					머리.play("점프")
+					상의.play("점프")
+					하의.play("점프")
 
 func _try_start_climb(dir: int) -> void:
 	# 기준 위치: 위로 시작은 현재, 아래로 시작은 발밑 오프셋
@@ -161,11 +193,17 @@ func _on_body_exited(body: Node2D) -> void:
 	on_ladder = false
 	is_climbing = false
 	스프라이트.play("서있기")
+	머리.play("서있기")
+	상의.play("서있기")
+	하의.play("서있기")
 
 func _on_피격_body_entered(body: Node2D) -> void:
 	체력-=12
 	print("공격 당함 (-12)")
 	스프라이트.play("공격당함")
+	머리.play("공격당함")
+	상의.play("공격당함")
+	하의.play("공격당함")
 	
 
 func _서있기():
@@ -174,11 +212,14 @@ func _서있기():
 	상의.play("서있기")
 	하의.play("서있기")
 	
-func _걷기():
-	스프라이트.play("걷기")
-	머리.play("걷기")
-	상의.play("걷기")
-	하의.play("걷기")
+#func _걷기():
+	#스프라이트.play("걷기")
+	#머리.play("걷기")
+	#상의.play("걷기")
+	#하의.play("걷기")
+
+func _펀치():
+	스프라이트.play("펀치")
 
 func _on_피격_body_exited(body: Node2D) -> void:
 	pass
