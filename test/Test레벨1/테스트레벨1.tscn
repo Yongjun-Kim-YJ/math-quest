@@ -183,7 +183,7 @@ custom_data_layer_2/type = 1
 sources/0 = SubResource("TileSetAtlasSource_r5ym4")
 
 [node name="테스트레벨1" type="Node2D"]
-position = Vector2(4, 127)
+position = Vector2(0, 128)
 
 [node name="초원배경화면" parent="." instance=ExtResource("1_c8k1n")]
 scale = Vector2(1.7, 1.7)
