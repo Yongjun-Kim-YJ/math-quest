@@ -1,15 +1,15 @@
-[gd_scene load_steps=12 format=3 uid="uid://ba3wt7ckv15kg"]
+[gd_scene load_steps=12 format=3 uid="uid://bjvc8h70wvq3h"]
 
-[ext_resource type="Texture2D" uid="uid://dwrbtolkh1p7w" path="res://assets/backgrounds/bg121.png" id="1_ep10p"]
-[ext_resource type="Texture2D" uid="uid://b5ee6sym73351" path="res://assets/backgrounds/bg122.png" id="2_g1saq"]
-[ext_resource type="Texture2D" uid="uid://rykmrqnc202g" path="res://assets/backgrounds/bg123.png" id="3_1bi4l"]
-[ext_resource type="Texture2D" uid="uid://dw1sib4ubdwed" path="res://assets/backgrounds/bg124.png" id="4_ohi8h"]
-[ext_resource type="Texture2D" uid="uid://ckg7y2k6tfapo" path="res://assets/backgrounds/bg125.png" id="5_bmvrx"]
-[ext_resource type="Texture2D" uid="uid://dlvd6vn405w1n" path="res://assets/backgrounds/bg126.png" id="6_dlja2"]
-[ext_resource type="Texture2D" uid="uid://dnujvh5fmxr1p" path="res://assets/tiles/tile12.png" id="7_vss8j"]
+[ext_resource type="Texture2D" uid="uid://dwrbtolkh1p7w" path="res://assets/backgrounds/bg121.png" id="1_sko1u"]
+[ext_resource type="Texture2D" uid="uid://b5ee6sym73351" path="res://assets/backgrounds/bg122.png" id="2_j2xst"]
+[ext_resource type="Texture2D" uid="uid://rykmrqnc202g" path="res://assets/backgrounds/bg123.png" id="3_iceor"]
+[ext_resource type="Texture2D" uid="uid://dw1sib4ubdwed" path="res://assets/backgrounds/bg124.png" id="4_nlcgr"]
+[ext_resource type="Texture2D" uid="uid://ckg7y2k6tfapo" path="res://assets/backgrounds/bg125.png" id="5_asb36"]
+[ext_resource type="Texture2D" uid="uid://dlvd6vn405w1n" path="res://assets/backgrounds/bg126.png" id="6_7pul6"]
+[ext_resource type="Texture2D" uid="uid://dnujvh5fmxr1p" path="res://assets/tiles/tile12.png" id="7_bh4nk"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_6abla"]
-texture = ExtResource("7_vss8j")
+texture = ExtResource("7_bh4nk")
 9:0/0 = 0
 9:1/0 = 0
 9:2/0 = 0
@@ -73,7 +73,7 @@ texture = ExtResource("7_vss8j")
 sources/0 = SubResource("TileSetAtlasSource_6abla")
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_5k0cy"]
-texture = ExtResource("7_vss8j")
+texture = ExtResource("7_bh4nk")
 17:0/0 = 0
 17:1/0 = 0
 15:2/0 = 0
@@ -138,38 +138,38 @@ sources/0 = SubResource("TileSetAtlasSource_5k0cy")
 [node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer"]
 position = Vector2(971, 540.5)
 scale = Vector2(65.7333, 37.0333)
-texture = ExtResource("1_ep10p")
+texture = ExtResource("1_sko1u")
 
 [node name="ParallaxLayer2" type="ParallaxLayer" parent="ParallaxBackground"]
 
 [node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer2"]
 position = Vector2(961.5, 538)
 scale = Vector2(1.00885, 1.01852)
-texture = ExtResource("2_g1saq")
+texture = ExtResource("2_j2xst")
 
 [node name="ParallaxLayer3" type="ParallaxLayer" parent="ParallaxBackground"]
 
 [node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer3"]
 position = Vector2(964, 536)
-texture = ExtResource("3_1bi4l")
+texture = ExtResource("3_iceor")
 
 [node name="ParallaxLayer4" type="ParallaxLayer" parent="ParallaxBackground"]
 
 [node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer4"]
 position = Vector2(956, 534)
-texture = ExtResource("4_ohi8h")
+texture = ExtResource("4_nlcgr")
 
 [node name="ParallaxLayer5" type="ParallaxLayer" parent="ParallaxBackground"]
 
 [node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer5"]
 position = Vector2(964, 534)
-texture = ExtResource("5_bmvrx")
+texture = ExtResource("5_asb36")
 
 [node name="ParallaxLayer6" type="ParallaxLayer" parent="ParallaxBackground"]
 
 [node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer6"]
 position = Vector2(959, 551)
-texture = ExtResource("6_dlja2")
+texture = ExtResource("6_7pul6")
 
 [node name="terrain" type="TileMapLayer" parent="."]
 tile_set = SubResource("TileSet_kht45")

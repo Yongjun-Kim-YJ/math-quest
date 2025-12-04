@@ -134,7 +134,7 @@ texture = ExtResource("6_qa4ro")
 [sub_resource type="TileSet" id="TileSet_x1f6c"]
 sources/0 = SubResource("TileSetAtlasSource_0rua8")
 
-[node name="map13" type="Node2D"]
+[node name="map_13" type="Node2D"]
 
 [node name="ParallaxBackground" type="ParallaxBackground" parent="."]
 
@@ -170,7 +170,9 @@ position = Vector2(899, 605)
 texture = ExtResource("5_vnanh")
 
 [node name="terrain" type="TileMapLayer" parent="."]
+scale = Vector2(4, 4)
 tile_set = SubResource("TileSet_0dnrt")
 
 [node name="decor" type="TileMapLayer" parent="."]
+scale = Vector2(4, 4)
 tile_set = SubResource("TileSet_x1f6c")

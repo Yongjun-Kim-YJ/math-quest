@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dhvbu0kwt3vyw"
-path="res://.godot/imported/bg005.png-294fb494bf8176d7ed3bec6e5cc1aabe.ctex"
+uid="uid://ck8f4b5pepujo"
+path="res://.godot/imported/saveslotnote.png-e90907ef3257e2e94638b95f288cda5a.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/backgrounds/bg005.png"
-dest_files=["res://.godot/imported/bg005.png-294fb494bf8176d7ed3bec6e5cc1aabe.ctex"]
+source_file="res://saveslotnote.png"
+dest_files=["res://.godot/imported/saveslotnote.png-e90907ef3257e2e94638b95f288cda5a.ctex"]
 
 [params]
 

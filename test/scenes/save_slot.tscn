@@ -1,0 +1,163 @@
+[gd_scene load_steps=20 format=3 uid="uid://daf5c4ixxx7yt"]
+
+[ext_resource type="Texture2D" uid="uid://blytxqgnf7yc8" path="res://assets/backgrounds/bg001.png" id="1_1fy5o"]
+[ext_resource type="Texture2D" uid="uid://n2n2muv6ht4e" path="res://assets/backgrounds/bg002.png" id="2_yh88m"]
+[ext_resource type="Texture2D" uid="uid://2dci4plwv1nm" path="res://assets/backgrounds/bg003.png" id="3_5ngxp"]
+[ext_resource type="Texture2D" uid="uid://bjcf701sllmxr" path="res://saveslot4.png" id="4_32et5"]
+[ext_resource type="Texture2D" uid="uid://tf5pd3b16jc" path="res://saveslot5.png" id="5_u54lf"]
+[ext_resource type="Texture2D" uid="uid://b13e78hggthqq" path="res://saveslot11.png" id="6_byd50"]
+[ext_resource type="Texture2D" uid="uid://bo51286uw6bwk" path="res://saveslot1.png" id="7_n2ysb"]
+[ext_resource type="Texture2D" uid="uid://cmfrraf2keb74" path="res://saveslot22.png" id="8_s5l1b"]
+[ext_resource type="Texture2D" uid="uid://d11l4lvie6gie" path="res://saveslot2.png" id="9_d3vv0"]
+[ext_resource type="Texture2D" uid="uid://cl6kqw7hnonn" path="res://saveslot33.png" id="10_dxwth"]
+[ext_resource type="Texture2D" uid="uid://cs5de1bvmtswi" path="res://saveslot3.png" id="11_xkdkj"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_m1k8t"]
+texture = ExtResource("4_32et5")
+texture_margin_left = 20.0
+texture_margin_top = 20.0
+texture_margin_right = 20.0
+texture_margin_bottom = 20.0
+axis_stretch_vertical = 1
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_urbvt"]
+texture = ExtResource("5_u54lf")
+texture_margin_left = 40.0
+texture_margin_top = 20.0
+texture_margin_right = 20.0
+texture_margin_bottom = 20.0
+axis_stretch_vertical = 1
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_3nfcl"]
+texture = ExtResource("6_byd50")
+texture_margin_left = 60.0
+texture_margin_top = 40.0
+texture_margin_right = 40.0
+texture_margin_bottom = 40.0
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_i0lt1"]
+texture = ExtResource("7_n2ysb")
+texture_margin_left = 60.0
+texture_margin_top = 40.0
+texture_margin_right = 40.0
+texture_margin_bottom = 40.0
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_gq6nj"]
+texture = ExtResource("8_s5l1b")
+texture_margin_left = 60.0
+texture_margin_top = 40.0
+texture_margin_right = 40.0
+texture_margin_bottom = 40.0
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_5urs1"]
+texture = ExtResource("9_d3vv0")
+texture_margin_left = 60.0
+texture_margin_top = 40.0
+texture_margin_right = 40.0
+texture_margin_bottom = 40.0
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_3fds5"]
+texture = ExtResource("10_dxwth")
+texture_margin_left = 60.0
+texture_margin_top = 40.0
+texture_margin_right = 40.0
+texture_margin_bottom = 40.0
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_jkwuf"]
+texture = ExtResource("11_xkdkj")
+texture_margin_left = 60.0
+texture_margin_top = 40.0
+texture_margin_right = 40.0
+texture_margin_bottom = 40.0
+
+[node name="save_slot" type="Node2D"]
+
+[node name="ParallaxBackground" type="ParallaxBackground" parent="."]
+
+[node name="ParallaxLayer" type="ParallaxLayer" parent="ParallaxBackground"]
+position = Vector2(1, 0)
+
+[node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer"]
+position = Vector2(997, 558)
+scale = Vector2(3.5, 3.5)
+texture = ExtResource("1_1fy5o")
+
+[node name="ParallaxLayer2" type="ParallaxLayer" parent="ParallaxBackground"]
+visible = false
+position = Vector2(1, 0)
+
+[node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer2"]
+position = Vector2(995, 588)
+scale = Vector2(3.5, 3.5)
+texture = ExtResource("2_yh88m")
+
+[node name="ParallaxLayer3" type="ParallaxLayer" parent="ParallaxBackground"]
+visible = false
+position = Vector2(1, 0)
+
+[node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer3"]
+position = Vector2(990, 636)
+scale = Vector2(3.5, 3.5)
+texture = ExtResource("3_5ngxp")
+
+[node name="Control" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="HBoxContainer" type="HBoxContainer" parent="Control"]
+layout_mode = 0
+offset_left = 174.0
+offset_top = 131.0
+offset_right = 1733.0
+offset_bottom = 1006.0
+theme_override_constants/separation = 80
+
+[node name="Button" type="Button" parent="Control/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_styles/hover = SubResource("StyleBoxTexture_m1k8t")
+theme_override_styles/normal = SubResource("StyleBoxTexture_urbvt")
+button_mask = 0
+
+[node name="Button2" type="Button" parent="Control/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_styles/hover = SubResource("StyleBoxTexture_m1k8t")
+theme_override_styles/normal = SubResource("StyleBoxTexture_urbvt")
+button_mask = 0
+
+[node name="Button3" type="Button" parent="Control/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_styles/hover = SubResource("StyleBoxTexture_m1k8t")
+theme_override_styles/normal = SubResource("StyleBoxTexture_urbvt")
+button_mask = 0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Control"]
+visible = false
+layout_mode = 0
+offset_left = 166.0
+offset_top = 129.0
+offset_right = 1730.0
+offset_bottom = 1004.0
+theme_override_constants/separation = 80
+
+[node name="Button" type="Button" parent="Control/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_styles/hover = SubResource("StyleBoxTexture_3nfcl")
+theme_override_styles/normal = SubResource("StyleBoxTexture_i0lt1")
+
+[node name="Button2" type="Button" parent="Control/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_styles/hover = SubResource("StyleBoxTexture_gq6nj")
+theme_override_styles/normal = SubResource("StyleBoxTexture_5urs1")
+
+[node name="Button3" type="Button" parent="Control/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_styles/hover = SubResource("StyleBoxTexture_3fds5")
+theme_override_styles/normal = SubResource("StyleBoxTexture_jkwuf")

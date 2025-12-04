@@ -658,7 +658,7 @@ texture = ExtResource("9_keg7v")
 sources/0 = SubResource("TileSetAtlasSource_v4by2")
 sources/1 = SubResource("TileSetAtlasSource_rm4di")
 
-[node name="map16" type="Node2D"]
+[node name="map_16" type="Node2D"]
 
 [node name="ParallaxBackground" type="ParallaxBackground" parent="."]
 
@@ -712,14 +712,18 @@ scale = Vector2(3, 3)
 texture = ExtResource("7_3dn6q")
 
 [node name="back" type="TileMapLayer" parent="."]
+scale = Vector2(4, 4)
 tile_set = SubResource("TileSet_bw61y")
 
 [node name="terrain" type="TileMapLayer" parent="."]
+scale = Vector2(4, 4)
 tile_set = SubResource("TileSet_fk064")
 
 [node name="ladder" type="TileMapLayer" parent="."]
+scale = Vector2(4, 4)
 tile_set = SubResource("TileSet_pl8b8")
 
 [node name="decor" type="TileMapLayer" parent="."]
+scale = Vector2(4, 4)
 tile_set = SubResource("TileSet_gs0kd")
 occlusion_enabled = false

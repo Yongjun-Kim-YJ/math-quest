@@ -1,0 +1,202 @@
+[gd_scene load_steps=29 format=3 uid="uid://d4fhtoejwvb1"]
+
+[ext_resource type="Texture2D" uid="uid://blytxqgnf7yc8" path="res://assets/backgrounds/bg001.png" id="1_qyslj"]
+[ext_resource type="Texture2D" uid="uid://n2n2muv6ht4e" path="res://assets/backgrounds/bg002.png" id="2_cbsd1"]
+[ext_resource type="Texture2D" uid="uid://2dci4plwv1nm" path="res://assets/backgrounds/bg003.png" id="3_mqf50"]
+[ext_resource type="Texture2D" uid="uid://b2fkbcn57i5is" path="res://assets/backgrounds/bgtitlehero.png" id="4_t34vg"]
+[ext_resource type="Texture2D" uid="uid://b13e78hggthqq" path="res://saveslot11.png" id="5_1ot34"]
+[ext_resource type="Texture2D" uid="uid://bo51286uw6bwk" path="res://saveslot1.png" id="6_lqobm"]
+[ext_resource type="Texture2D" uid="uid://cmfrraf2keb74" path="res://saveslot22.png" id="7_6ppm8"]
+[ext_resource type="Texture2D" uid="uid://d11l4lvie6gie" path="res://saveslot2.png" id="8_bre4b"]
+[ext_resource type="Texture2D" uid="uid://cl6kqw7hnonn" path="res://saveslot33.png" id="9_ur11i"]
+[ext_resource type="Texture2D" uid="uid://cs5de1bvmtswi" path="res://saveslot3.png" id="10_u3gtk"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_qyslj"]
+atlas = ExtResource("4_t34vg")
+region = Rect2(0, 0, 500, 500)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_cbsd1"]
+atlas = ExtResource("4_t34vg")
+region = Rect2(500, 0, 500, 500)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_mqf50"]
+atlas = ExtResource("4_t34vg")
+region = Rect2(1000, 0, 500, 500)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_t34vg"]
+atlas = ExtResource("4_t34vg")
+region = Rect2(1500, 0, 500, 500)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_hw5xk"]
+atlas = ExtResource("4_t34vg")
+region = Rect2(2000, 0, 500, 500)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_tu733"]
+atlas = ExtResource("4_t34vg")
+region = Rect2(2500, 0, 500, 500)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_utk4r"]
+atlas = ExtResource("4_t34vg")
+region = Rect2(3000, 0, 500, 500)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_qmd01"]
+atlas = ExtResource("4_t34vg")
+region = Rect2(3500, 0, 500, 500)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_dqthk"]
+atlas = ExtResource("4_t34vg")
+region = Rect2(4000, 0, 500, 500)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_rw4nd"]
+atlas = ExtResource("4_t34vg")
+region = Rect2(4500, 0, 500, 500)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_h0axx"]
+atlas = ExtResource("4_t34vg")
+region = Rect2(5000, 0, 500, 500)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_5koj4"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_qyslj")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_cbsd1")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_mqf50")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_t34vg")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_hw5xk")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_tu733")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_utk4r")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_qmd01")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_dqthk")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_rw4nd")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_h0axx")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_xolyv"]
+texture = ExtResource("5_1ot34")
+texture_margin_left = 60.0
+texture_margin_top = 40.0
+texture_margin_right = 40.0
+texture_margin_bottom = 40.0
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_qlmyv"]
+texture = ExtResource("6_lqobm")
+texture_margin_left = 60.0
+texture_margin_top = 40.0
+texture_margin_right = 40.0
+texture_margin_bottom = 40.0
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_p7aju"]
+texture = ExtResource("7_6ppm8")
+texture_margin_left = 60.0
+texture_margin_top = 40.0
+texture_margin_right = 40.0
+texture_margin_bottom = 40.0
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_fcpdo"]
+texture = ExtResource("8_bre4b")
+texture_margin_left = 60.0
+texture_margin_top = 40.0
+texture_margin_right = 40.0
+texture_margin_bottom = 40.0
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_why83"]
+texture = ExtResource("9_ur11i")
+texture_margin_left = 60.0
+texture_margin_top = 40.0
+texture_margin_right = 40.0
+texture_margin_bottom = 40.0
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_udv04"]
+texture = ExtResource("10_u3gtk")
+texture_margin_left = 60.0
+texture_margin_top = 40.0
+texture_margin_right = 40.0
+texture_margin_bottom = 40.0
+
+[node name="title_scene" type="Node2D"]
+
+[node name="ParallaxBackground" type="ParallaxBackground" parent="."]
+
+[node name="ParallaxLayer" type="ParallaxLayer" parent="ParallaxBackground"]
+position = Vector2(1, 0)
+
+[node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer"]
+position = Vector2(997, 558)
+scale = Vector2(3.5, 3.5)
+texture = ExtResource("1_qyslj")
+
+[node name="ParallaxLayer2" type="ParallaxLayer" parent="ParallaxBackground"]
+position = Vector2(1, 0)
+
+[node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer2"]
+position = Vector2(995, 517)
+scale = Vector2(3.5, 3.5)
+texture = ExtResource("2_cbsd1")
+
+[node name="ParallaxLayer3" type="ParallaxLayer" parent="ParallaxBackground"]
+position = Vector2(1, 0)
+
+[node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer3"]
+position = Vector2(993, 515)
+scale = Vector2(3.5, 3.5)
+texture = ExtResource("3_mqf50")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(136, 807)
+scale = Vector2(0.3, 0.3)
+sprite_frames = SubResource("SpriteFrames_5koj4")
+frame_progress = 0.955349
+speed_scale = 2.5
+
+[node name="Node2D" type="Node2D" parent="."]
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+visible = false
+offset_left = 166.0
+offset_top = 129.0
+offset_right = 1730.0
+offset_bottom = 1004.0
+theme_override_constants/separation = 80
+
+[node name="Button" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_styles/hover = SubResource("StyleBoxTexture_xolyv")
+theme_override_styles/normal = SubResource("StyleBoxTexture_qlmyv")
+
+[node name="Button2" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_styles/hover = SubResource("StyleBoxTexture_p7aju")
+theme_override_styles/normal = SubResource("StyleBoxTexture_fcpdo")
+
+[node name="Button3" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_styles/hover = SubResource("StyleBoxTexture_why83")
+theme_override_styles/normal = SubResource("StyleBoxTexture_udv04")
