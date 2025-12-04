@@ -2363,7 +2363,7 @@ autoplay = "서있기"
 [node name="머리" type="AnimatedSprite2D" parent="."]
 position = Vector2(0, -16)
 sprite_frames = SubResource("SpriteFrames_m311d")
-animation = &"공격당함"
+animation = &"걷기"
 autoplay = "서있기"
 
 [node name="상의" type="AnimatedSprite2D" parent="."]
@@ -2407,7 +2407,7 @@ shape = SubResource("RectangleShape2D_wjurc")
 
 [connection signal="body_entered" from="LadderArea2D" to="." method="_on_body_entered"]
 [connection signal="body_exited" from="LadderArea2D" to="." method="_on_body_exited"]
-[connection signal="body_entered" from="피격Area2D" to="." method="_on_피격_body_entered"]
 [connection signal="body_entered" from="피격Area2D" to="." method="_on_body_entered"]
+[connection signal="body_entered" from="피격Area2D" to="." method="_on_피격_body_entered"]
 [connection signal="body_exited" from="피격Area2D" to="." method="_on_body_exited"]
 [connection signal="body_exited" from="피격Area2D" to="." method="_on_피격_body_exited"]
