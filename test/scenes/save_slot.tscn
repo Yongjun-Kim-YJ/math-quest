@@ -14,26 +14,26 @@
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_m1k8t"]
 texture = ExtResource("4_32et5")
-texture_margin_left = 20.0
-texture_margin_top = 20.0
-texture_margin_right = 20.0
-texture_margin_bottom = 20.0
+texture_margin_left = 60.0
+texture_margin_top = 48.0
+texture_margin_right = 30.0
+texture_margin_bottom = 48.0
 axis_stretch_vertical = 1
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_urbvt"]
 texture = ExtResource("5_u54lf")
-texture_margin_left = 40.0
-texture_margin_top = 20.0
-texture_margin_right = 20.0
-texture_margin_bottom = 20.0
+texture_margin_left = 60.0
+texture_margin_top = 48.0
+texture_margin_right = 30.0
+texture_margin_bottom = 48.0
 axis_stretch_vertical = 1
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_3nfcl"]
 texture = ExtResource("6_byd50")
 texture_margin_left = 60.0
 texture_margin_top = 40.0
-texture_margin_right = 40.0
-texture_margin_bottom = 40.0
+texture_margin_right = 60.0
+texture_margin_bottom = 60.0
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_i0lt1"]
 texture = ExtResource("7_n2ysb")
@@ -111,7 +111,7 @@ layout_mode = 0
 offset_left = 174.0
 offset_top = 131.0
 offset_right = 1733.0
-offset_bottom = 1006.0
+offset_bottom = 995.0
 theme_override_constants/separation = 80
 
 [node name="Button" type="Button" parent="Control/HBoxContainer"]
