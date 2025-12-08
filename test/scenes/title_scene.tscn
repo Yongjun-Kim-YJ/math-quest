@@ -1,4 +1,4 @@
-[gd_scene load_steps=18 format=3 uid="uid://d4fhtoejwvb1"]
+[gd_scene load_steps=20 format=3 uid="uid://d4fhtoejwvb1"]
 
 [ext_resource type="Texture2D" uid="uid://blytxqgnf7yc8" path="res://assets/backgrounds/bg001.png" id="1_qyslj"]
 [ext_resource type="Texture2D" uid="uid://n2n2muv6ht4e" path="res://assets/backgrounds/bg002.png" id="2_cbsd1"]
@@ -91,6 +91,10 @@ animations = [{
 "speed": 5.0
 }]
 
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_bq8jb"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_l5n7b"]
+
 [node name="title_scene" type="Node2D"]
 
 [node name="ParallaxBackground" type="ParallaxBackground" parent="."]
@@ -140,14 +144,30 @@ layout_mode = 2
 size_flags_vertical = 3
 theme_override_fonts/font = ExtResource("5_bq8jb")
 theme_override_font_sizes/font_size = 60
+theme_override_styles/hover = SubResource("StyleBoxTexture_bq8jb")
+theme_override_styles/normal = SubResource("StyleBoxTexture_l5n7b")
+shortcut_feedback = false
+shortcut_in_tooltip = false
 text = "게임 시작"
 
 [node name="Button2" type="Button" parent="VBoxContainer"]
 layout_mode = 2
 size_flags_vertical = 3
+theme_override_fonts/font = ExtResource("5_bq8jb")
+theme_override_font_sizes/font_size = 60
+theme_override_styles/hover = SubResource("StyleBoxTexture_bq8jb")
+theme_override_styles/normal = SubResource("StyleBoxTexture_l5n7b")
+shortcut_feedback = false
+shortcut_in_tooltip = false
 text = "설정"
 
 [node name="Button3" type="Button" parent="VBoxContainer"]
 layout_mode = 2
 size_flags_vertical = 3
+theme_override_fonts/font = ExtResource("5_bq8jb")
+theme_override_font_sizes/font_size = 60
+theme_override_styles/hover = SubResource("StyleBoxTexture_bq8jb")
+theme_override_styles/normal = SubResource("StyleBoxTexture_l5n7b")
+shortcut_feedback = false
+shortcut_in_tooltip = false
 text = "게임 종료"
