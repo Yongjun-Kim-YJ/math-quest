@@ -2654,5 +2654,5 @@ shape = SubResource("RectangleShape2D_wjurc")
 [connection signal="body_exited" from="LadderArea2D" to="." method="_on_body_exited"]
 [connection signal="body_entered" from="피격Area2D" to="." method="_on_body_entered"]
 [connection signal="body_entered" from="피격Area2D" to="." method="_on_피격_body_entered"]
-[connection signal="body_exited" from="피격Area2D" to="." method="_on_body_exited"]
 [connection signal="body_exited" from="피격Area2D" to="." method="_on_피격_body_exited"]
+[connection signal="body_exited" from="피격Area2D" to="." method="_on_body_exited"]

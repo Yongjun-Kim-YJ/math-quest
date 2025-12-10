@@ -1,11 +1,50 @@
-[gd_scene load_steps=5 format=3 uid="uid://vvkd4ebc3hl1"]
+[gd_scene load_steps=8 format=4 uid="uid://vvkd4ebc3hl1"]
 
 [ext_resource type="PackedScene" uid="uid://bqabb3t2x85sq" path="res://캐릭터/캐릭터.tscn" id="1_1kn5s"]
 [ext_resource type="Texture2D" uid="uid://bs6xwru04t66b" path="res://icon.svg" id="2_iv3fh"]
 [ext_resource type="PackedScene" uid="uid://bm0a4j6vu274v" path="res://토끼몬스터/토끼몬스터.tscn" id="3_iv3fh"]
+[ext_resource type="Texture2D" uid="uid://303j6k1dnv85" path="res://assets/tiles/tile10.png" id="4_0nchn"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_0nchn"]
 size = Vector2(128, 128)
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_aqn2s"]
+texture = ExtResource("4_0nchn")
+0:0/0 = 0
+1:0/0 = 0
+2:0/0 = 0
+3:0/0 = 0
+4:0/0 = 0
+5:0/0 = 0
+6:0/0 = 0
+7:0/0 = 0
+8:0/0 = 0
+9:0/0 = 0
+11:2/0 = 0
+11:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+11:2/0/custom_data_0 = true
+11:2/0/custom_data_2 = true
+11:3/0 = 0
+11:3/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+11:3/0/custom_data_0 = true
+11:3/0/custom_data_2 = true
+11:4/0 = 0
+11:1/0 = 0
+11:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+11:1/0/custom_data_0 = true
+11:1/0/custom_data_2 = true
+11:0/0 = 0
+
+[sub_resource type="TileSet" id="TileSet_0gkxq"]
+physics_layer_0/collision_layer = 4
+physics_layer_0/collision_mask = 0
+custom_data_layer_0/name = "is_ladder"
+custom_data_layer_0/type = 1
+custom_data_layer_1/name = "rope"
+custom_data_layer_1/type = 1
+custom_data_layer_2/name = "ladder"
+custom_data_layer_2/type = 1
+sources/0 = SubResource("TileSetAtlasSource_aqn2s")
 
 [node name="레벨2" type="Node2D"]
 
@@ -10708,3 +10747,8 @@ scale = Vector2(30, 30)
 
 [node name="토끼몬스터50" parent="." instance=ExtResource("3_iv3fh")]
 position = Vector2(2086, 169968)
+
+[node name="ladder" type="TileMapLayer" parent="."]
+scale = Vector2(4, 4)
+tile_map_data = PackedByteArray("AAA3AA0AAAALAAMAAAA3AAwAAAALAAIAAAA3AAsAAAALAAIAAAA3AAoAAAALAAIAAAA3AAkAAAALAAIAAAA3AAgAAAALAAEAAABYAAwAAAALAAMAAABYAAcAAAALAAIAAABYAAgAAAALAAIAAABYAAkAAAALAAIAAABYAAoAAAALAAIAAABYAAsAAAALAAIAAABYAAUAAAALAAAAAABYAAYAAAALAAEAAABtAAQAAAALAAAAAABtAAUAAAALAAEAAABtAAYAAAALAAIAAABtAAcAAAALAAIAAABtAAgAAAALAAIAAABtAAkAAAALAAIAAABtAAoAAAALAAMAAABxAAIAAAALAAMAAABxAAEAAAALAAIAAABxAAAAAAALAAIAAABxAP//AAALAAIAAABxAP7/AAALAAIAAABxAP3/AAALAAIAAABxAPv/AAALAAAAAABxAPz/AAALAAEAAACdAP//AAALAAEAAACdAAAAAAALAAIAAACdAAEAAAALAAIAAACdAAIAAAALAAIAAACdAAMAAAALAAIAAACdAAQAAAALAAIAAACdAAUAAAALAAMAAACrAAQAAAALAAAAAACrAAUAAAALAAEAAACrAAYAAAALAAIAAACrAAcAAAALAAIAAACrAAgAAAALAAIAAACrAAkAAAALAAIAAACrAAoAAAALAAMAAADUAAIAAAALAAAAAADUAAMAAAALAAEAAADUAAQAAAALAAIAAADUAAUAAAALAAIAAADUAAYAAAALAAIAAADUAAcAAAALAAIAAADUAAgAAAALAAIAAADUAAkAAAALAAIAAADUAAoAAAALAAMAAAA3AAcAAAALAAAAAAALAAkAAAALAAAAAAALAAoAAAALAAEAAAALAAsAAAALAAIAAAALAAwAAAALAAIAAAALAA0AAAALAAMAAAA=")
+tile_set = SubResource("TileSet_0gkxq")
