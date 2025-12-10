@@ -128,7 +128,7 @@ texture = ExtResource("3_mqf50")
 position = Vector2(136, 807)
 scale = Vector2(0.3, 0.3)
 sprite_frames = SubResource("SpriteFrames_5koj4")
-frame_progress = 0.955349
+frame_progress = 0.399819
 speed_scale = 2.5
 
 [node name="Node2D" type="Node2D" parent="."]
