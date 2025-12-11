@@ -1,13 +1,14 @@
-[gd_scene load_steps=249 format=3 uid="uid://bqabb3t2x85sq"]
+[gd_scene load_steps=247 format=3 uid="uid://bqabb3t2x85sq"]
 
 [ext_resource type="Script" uid="uid://dg8kfyp3a75wf" path="res://캐릭터/캐릭터.gd" id="1_btloq"]
 [ext_resource type="Texture2D" uid="uid://bo7qhv0enot1r" path="res://Godot Engine 실전 2D 어드벤처 게임 제작 - 자료/캐릭터/Ninja Frog/Idle (32x32).png" id="1_wsdg4"]
 [ext_resource type="Texture2D" uid="uid://bxydbjyrwwto8" path="res://Godot Engine 실전 2D 어드벤처 게임 제작 - 자료/캐릭터/Ninja Frog/Run (32x32).png" id="2_xaqfc"]
 [ext_resource type="Texture2D" uid="uid://6akudwpd5fdg" path="res://Godot Engine 실전 2D 어드벤처 게임 제작 - 자료/캐릭터/Ninja Frog/Fall (32x32).png" id="3_cmtnf"]
 [ext_resource type="Texture2D" uid="uid://b6mykxeqha0pv" path="res://Godot Engine 실전 2D 어드벤처 게임 제작 - 자료/캐릭터/Ninja Frog/Jump (32x32).png" id="5_wjurc"]
-[ext_resource type="Texture2D" uid="uid://catg2cpffhj14" path="res://prototype/hero/body_dmgground.png" id="6_3dgep"]
+[ext_resource type="Texture2D" uid="uid://cw6e48r3ausgr" path="res://hero/hbd_s03.png" id="7_issmq"]
 [ext_resource type="Texture2D" uid="uid://blby5lwvts8ii" path="res://prototype/hero/body_walk.png" id="7_tg6ek"]
 [ext_resource type="Texture2D" uid="uid://bvc6drgemq2ig" path="res://prototype/hero/body_jumpsnappy.png" id="8_08d8a"]
+[ext_resource type="Texture2D" uid="uid://cvurr3whovlfh" path="res://hero/hh0_s03.png" id="8_issmq"]
 [ext_resource type="Texture2D" uid="uid://c0ee7i3dufa7e" path="res://prototype/hero/body_jumpsmooth.png" id="8_npy1o"]
 [ext_resource type="Texture2D" uid="uid://be7hqwyvvyp3n" path="res://prototype/hero/body_climbladder.png" id="8_ovgml"]
 [ext_resource type="Texture2D" uid="uid://cofe55oswxj1j" path="res://prototype/hero/body_climbrope.png" id="8_yq3ro"]
@@ -15,7 +16,6 @@
 [ext_resource type="Texture2D" uid="uid://c1sax3tpi28r0" path="res://prototype/hero/top_01_idle.png" id="11_wacbp"]
 [ext_resource type="Texture2D" uid="uid://du6pm6gff6080" path="res://prototype/hero/bottom_01_idle.png" id="12_gypvn"]
 [ext_resource type="Texture2D" uid="uid://deu4bbkvcf43j" path="res://image1.png" id="12_issmq"]
-[ext_resource type="Texture2D" uid="uid://8dqc3dbeecwq" path="res://prototype/hero/hair_01_dmgground.png" id="12_ny5mu"]
 [ext_resource type="Texture2D" uid="uid://disql0noxjowa" path="res://prototype/hero/body_atk_punchstraight.png" id="13_xgltd"]
 [ext_resource type="Texture2D" uid="uid://cwqxd3eav21i4" path="res://prototype/hero/top_01_dmgground.png" id="14_ny5mu"]
 [ext_resource type="Texture2D" uid="uid://bpkeysr4lmhl2" path="res://prototype/hero/top_01_walk.png" id="14_rg85m"]
@@ -176,12 +176,12 @@ region = Rect2(320, 0, 32, 32)
 atlas = ExtResource("7_tg6ek")
 region = Rect2(352, 0, 32, 32)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_08d8a"]
-atlas = ExtResource("6_3dgep")
+[sub_resource type="AtlasTexture" id="AtlasTexture_kyl4g"]
+atlas = ExtResource("7_issmq")
 region = Rect2(0, 0, 32, 32)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_0g2rl"]
-atlas = ExtResource("6_3dgep")
+[sub_resource type="AtlasTexture" id="AtlasTexture_ud2vc"]
+atlas = ExtResource("14_ny5mu")
 region = Rect2(32, 0, 32, 32)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_7m2p8"]
@@ -436,18 +436,18 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_08d8a")
+"texture": SubResource("AtlasTexture_kyl4g")
 }, {
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_0g2rl")
+"texture": SubResource("AtlasTexture_ud2vc")
 }, {
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_08d8a")
+"texture": SubResource("AtlasTexture_kyl4g")
 }, {
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_0g2rl")
+"texture": SubResource("AtlasTexture_ud2vc")
 }],
-"loop": true,
+"loop": false,
 "name": &"공격당함",
 "speed": 6.0
 }, {
@@ -635,13 +635,17 @@ region = Rect2(320, 0, 32, 32)
 atlas = ExtResource("14_wm781")
 region = Rect2(352, 0, 32, 32)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_27sgt"]
-atlas = ExtResource("12_ny5mu")
+[sub_resource type="AtlasTexture" id="AtlasTexture_oban3"]
+atlas = ExtResource("8_issmq")
 region = Rect2(0, 0, 32, 32)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_oban3"]
-atlas = ExtResource("12_ny5mu")
+[sub_resource type="AtlasTexture" id="AtlasTexture_27sgt"]
+atlas = ExtResource("8_issmq")
 region = Rect2(32, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_d6xjd"]
+atlas = ExtResource("8_issmq")
+region = Rect2(0, 0, 32, 32)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_4rnli"]
 atlas = ExtResource("20_issmq")
@@ -808,18 +812,18 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_27sgt")
-}, {
-"duration": 1.0,
 "texture": SubResource("AtlasTexture_oban3")
 }, {
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_27sgt")
 }, {
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_oban3")
+"texture": SubResource("AtlasTexture_d6xjd")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_27sgt")
 }],
-"loop": true,
+"loop": false,
 "name": &"공격당함",
 "speed": 6.0
 }, {
@@ -1007,14 +1011,6 @@ region = Rect2(320, 0, 32, 32)
 atlas = ExtResource("14_rg85m")
 region = Rect2(352, 0, 32, 32)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_6mqic"]
-atlas = ExtResource("14_ny5mu")
-region = Rect2(0, 0, 32, 32)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_ud2vc"]
-atlas = ExtResource("14_ny5mu")
-region = Rect2(32, 0, 32, 32)
-
 [sub_resource type="AtlasTexture" id="AtlasTexture_rwqwh"]
 atlas = ExtResource("20_0g2rl")
 region = Rect2(128, 0, 32, 32)
@@ -1180,18 +1176,18 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_6mqic")
+"texture": SubResource("AtlasTexture_ud2vc")
 }, {
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_ud2vc")
 }, {
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_6mqic")
+"texture": SubResource("AtlasTexture_ud2vc")
 }, {
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_ud2vc")
 }],
-"loop": true,
+"loop": false,
 "name": &"공격당함",
 "speed": 6.0
 }, {
@@ -1379,10 +1375,6 @@ region = Rect2(320, 0, 32, 32)
 atlas = ExtResource("16_ny5mu")
 region = Rect2(352, 0, 32, 32)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_uhjey"]
-atlas = ExtResource("16_3seev")
-region = Rect2(0, 0, 32, 32)
-
 [sub_resource type="AtlasTexture" id="AtlasTexture_egosn"]
 atlas = ExtResource("16_3seev")
 region = Rect2(32, 0, 32, 32)
@@ -1552,18 +1544,18 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_uhjey")
+"texture": SubResource("AtlasTexture_egosn")
 }, {
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_egosn")
 }, {
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_uhjey")
+"texture": SubResource("AtlasTexture_ud2vc")
 }, {
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_egosn")
+"texture": SubResource("AtlasTexture_ud2vc")
 }],
-"loop": true,
+"loop": false,
 "name": &"공격당함",
 "speed": 6.0
 }, {
@@ -2602,25 +2594,25 @@ script = ExtResource("1_btloq")
 [node name="기본Body" type="AnimatedSprite2D" parent="."]
 position = Vector2(0, -16)
 sprite_frames = SubResource("SpriteFrames_gypvn")
-animation = &"서있기"
+animation = &"공격당함"
 autoplay = "서있기"
 
 [node name="머리" type="AnimatedSprite2D" parent="."]
 position = Vector2(0, -16)
 sprite_frames = SubResource("SpriteFrames_m311d")
-animation = &"서있기"
+animation = &"공격당함"
 autoplay = "서있기"
 
 [node name="상의" type="AnimatedSprite2D" parent="."]
 position = Vector2(0, -16)
 sprite_frames = SubResource("SpriteFrames_edmkm")
-animation = &"서있기"
+animation = &"공격당함"
 autoplay = "서있기"
 
 [node name="하의" type="AnimatedSprite2D" parent="."]
 position = Vector2(0, -16)
 sprite_frames = SubResource("SpriteFrames_djc8s")
-animation = &"서있기"
+animation = &"공격당함"
 autoplay = "서있기"
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
