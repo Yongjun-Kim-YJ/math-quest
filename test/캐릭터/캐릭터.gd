@@ -9,6 +9,7 @@ extends CharacterBody2D
 @export var is_climbing = false
 @export var desired_x_pos: float
 @export var is_attacking = false
+@export var is_damaged = false
 @onready var 스프라이트 = $"기본Body"
 @onready var 머리 = $"머리"
 @onready var 상의 = $"상의"
@@ -30,6 +31,10 @@ func _movement(delta):
 	# 캐릭터가 바닥에 있지 않은 경우에만 중력 적용
 	if not is_on_floor():
 		velocity.y += delta * 중력가속도
+	
+	if is_damaged:
+		velocity.x = 0  # 가로 속도 고정 (밀려나는 연출 넣고 싶으면 여기서만 조절)
+		return
 	
 	if is_on_floor():
 		is_climbing = false
@@ -120,17 +125,15 @@ func _movement(delta):
 		await 스프라이트.animation_finished
 		is_attacking = false
 	
-	if !is_attacking:
+	if !is_attacking and !is_damaged:
 		# 캐릭터가 바닥에 있을 때
 		if is_on_floor() == true:
 			if velocity.x == 0:
-				#스프라이트.play("서있기")
 				스프라이트.play("서있기")
 				머리.play("서있기")
 				상의.play("서있기")
 				하의.play("서있기")
 			else:
-				#스프라이트.play("걷기")
 				스프라이트.play("걷기")
 				머리.play("걷기")
 				상의.play("걷기")
@@ -200,12 +203,25 @@ func _on_body_exited(body: Node2D) -> void:
 	하의.play("서있기")
 
 func _on_피격_body_entered(body: Node2D) -> void:
+	
+	is_damaged = true
+	is_attacking = false
+	velocity = Vector2.ZERO
+	last_dir = 0
 	HP-=12
 	print("공격 당함 (-12)")
 	스프라이트.play("공격당함")
 	머리.play("공격당함")
 	상의.play("공격당함")
 	하의.play("공격당함")
+	await 스프라이트.animation_finished
+	is_damaged = false
+	if !is_damaged:
+		_서있기()
+
+func _on_피격_body_exited(body: Node2D) -> void:
+	if is_damaged== true:
+		is_damaged = false
 	
 
 func _서있기():
@@ -222,6 +238,3 @@ func _서있기():
 
 func _펀치():
 	스프라이트.play("펀치")
-
-func _on_피격_body_exited(body: Node2D) -> void:
-	pass

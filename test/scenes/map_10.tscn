@@ -404,7 +404,7 @@ texture = ExtResource("6_nqdxh")
 [sub_resource type="TileSet" id="TileSet_b4g5a"]
 sources/1 = SubResource("TileSetAtlasSource_6sexs")
 
-[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_wq5dh"]
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_xml0a"]
 texture = ExtResource("6_nqdxh")
 0:0/0 = 0
 1:0/0 = 0
@@ -440,7 +440,7 @@ custom_data_layer_1/name = "rope"
 custom_data_layer_1/type = 1
 custom_data_layer_2/name = "ladder"
 custom_data_layer_2/type = 1
-sources/0 = SubResource("TileSetAtlasSource_wq5dh")
+sources/0 = SubResource("TileSetAtlasSource_xml0a")
 
 [node name="map10" type="Node2D"]
 
