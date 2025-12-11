@@ -14,7 +14,9 @@ extends CharacterBody2D
 @onready var 상의 = $"상의"
 @onready var 하의 = $"하의"
 @onready var ladder_layer: TileMapLayer = $"../ladder"
-@export var 체력 = 100
+@export var HP = 130
+@export var MP = 100
+@export var EXP = 10
 var climb_move = "사다리이동"
 var climb_idle = "사다리정지"
 
@@ -198,7 +200,7 @@ func _on_body_exited(body: Node2D) -> void:
 	하의.play("서있기")
 
 func _on_피격_body_entered(body: Node2D) -> void:
-	체력-=12
+	HP-=12
 	print("공격 당함 (-12)")
 	스프라이트.play("공격당함")
 	머리.play("공격당함")
