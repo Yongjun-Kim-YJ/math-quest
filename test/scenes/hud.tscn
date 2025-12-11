@@ -1,0 +1,547 @@
+[gd_scene load_steps=40 format=3 uid="uid://d2hkbelpsicum"]
+
+[ext_resource type="Texture2D" uid="uid://cnp8lp6g1ms30" path="res://assets/hud/bar_memo.png" id="1_ahhtf"]
+[ext_resource type="FontFile" uid="uid://qgrsv3k5yf3o" path="res://fonts/PF스타더스트 3.0 S Bold.ttf" id="2_0i1j5"]
+[ext_resource type="Texture2D" uid="uid://bhfxpir04usev" path="res://assets/hud/bar_hpbox.png" id="3_hd3ao"]
+[ext_resource type="FontFile" uid="uid://43i1jel0yjjj" path="res://fonts/Galmuri9.ttf" id="4_5n1hp"]
+[ext_resource type="FontFile" uid="uid://c6y6b4nugtl2x" path="res://fonts/Galmuri11-Bold.ttf" id="4_apjy4"]
+[ext_resource type="Texture2D" uid="uid://d303qgm0skyed" path="res://assets/hud/bar_mpbox.png" id="5_mphia"]
+[ext_resource type="Texture2D" uid="uid://cwx73ypd5sgb5" path="res://assets/hud/bar_mp.png" id="6_0m4u7"]
+[ext_resource type="Texture2D" uid="uid://v1t6rqdfg1os" path="res://assets/hud/bar_96hp.png" id="6_vh1iw"]
+[ext_resource type="Texture2D" uid="uid://dlekbumcupyqs" path="res://assets/hud/bar_xpbox.png" id="7_apjy4"]
+[ext_resource type="Texture2D" uid="uid://dgov7al5u0p7q" path="res://assets/hud/bar_xp.png" id="8_5n1hp"]
+[ext_resource type="Texture2D" uid="uid://ds1ublcdlgbpo" path="res://assets/hud/bar_coin.png" id="10_0m4u7"]
+[ext_resource type="Texture2D" uid="uid://cpl72rgn5vf8q" path="res://assets/hud/bar_96hpbox.png" id="11_fgtve"]
+[ext_resource type="Texture2D" uid="uid://ctflmqcg87275" path="res://assets/hud/bar_96mpbox.png" id="12_03o4m"]
+[ext_resource type="Texture2D" uid="uid://52fuuqctykn4" path="res://assets/hud/minimapbox160.png" id="13_5n1hp"]
+[ext_resource type="Texture2D" uid="uid://du43hwqy7q88g" path="res://assets/hud/bar_96mp.png" id="13_dl6ww"]
+[ext_resource type="Texture2D" uid="uid://bp6cuxjnv0qaq" path="res://assets/hud/minimapball_now.png" id="14_3swnk"]
+[ext_resource type="Texture2D" uid="uid://3ljt0vbpo0pk" path="res://assets/hud/bar_96xpbox.png" id="14_8f8xv"]
+[ext_resource type="Texture2D" uid="uid://bplqgb6a3r322" path="res://assets/hud/minimapball_off.png" id="15_qkknv"]
+[ext_resource type="Texture2D" uid="uid://cfbjrjfce1nv8" path="res://assets/hud/bar_96xp.png" id="15_v0qwq"]
+[ext_resource type="Texture2D" uid="uid://bg2tyrf3tohnd" path="res://assets/hud/button1.png" id="16_mgfyp"]
+[ext_resource type="Texture2D" uid="uid://3haho6ir43wt" path="res://assets/hud/button11.png" id="17_ptr5m"]
+[ext_resource type="Texture2D" uid="uid://bow1no2dg6n6h" path="res://assets/hud/button2.png" id="18_of3ib"]
+[ext_resource type="Texture2D" uid="uid://x00rmf4rmykf" path="res://assets/hud/button22.png" id="19_7600b"]
+[ext_resource type="Texture2D" uid="uid://bdl3qlmis7i2g" path="res://assets/hud/button3.png" id="20_e558t"]
+[ext_resource type="Texture2D" uid="uid://b58t6ilx2g1kw" path="res://assets/hud/button33.png" id="21_frrke"]
+[ext_resource type="Texture2D" uid="uid://dqootx5jmk3rv" path="res://assets/hud/button4.png" id="22_vh1iw"]
+[ext_resource type="Texture2D" uid="uid://dwhk37wuqcue" path="res://assets/hud/button44.png" id="23_fgtve"]
+[ext_resource type="Texture2D" uid="uid://bjtd060hiddwc" path="res://assets/hud/button5.png" id="24_03o4m"]
+[ext_resource type="Texture2D" uid="uid://dq4yxhoaj7ore" path="res://assets/hud/button55.png" id="25_dl6ww"]
+[ext_resource type="Texture2D" uid="uid://dyaghbcnf3o4c" path="res://assets/hud/button6.png" id="26_8f8xv"]
+[ext_resource type="Texture2D" uid="uid://c5xlme4f0tve4" path="res://assets/hud/button66.png" id="27_v0qwq"]
+[ext_resource type="Texture2D" uid="uid://bi1p7s8hf3eh1" path="res://assets/hud/saveskill.png" id="28_ptr5m"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_oo0fn"]
+texture = ExtResource("1_ahhtf")
+texture_margin_left = 20.0
+texture_margin_top = 20.0
+texture_margin_right = 20.0
+texture_margin_bottom = 20.0
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_uo2fv"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_5n1hp"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_uxdf7"]
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_5357l"]
+load_path = "res://.godot/imported/minimapball_on.png-bffdc9fb920b2155b5987ff73cad32b5.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_iypfu"]
+load_path = "res://.godot/imported/minimapball_on.png-bffdc9fb920b2155b5987ff73cad32b5.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_qpprf"]
+load_path = "res://.godot/imported/minimapball_on.png-bffdc9fb920b2155b5987ff73cad32b5.ctex"
+
+[node name="hud" type="Node2D"]
+
+[node name="hud" type="CanvasLayer" parent="."]
+
+[node name="hpbox" type="Control" parent="hud"]
+layout_mode = 3
+anchors_preset = 0
+offset_left = 20.0
+offset_top = 20.0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="hp,mp,xp" type="Panel" parent="hud/hpbox"]
+layout_mode = 0
+offset_right = 96.0
+offset_bottom = 60.0
+scale = Vector2(2, 2)
+theme_override_styles/panel = SubResource("StyleBoxTexture_oo0fn")
+
+[node name="id" type="Label" parent="hud/hpbox/hp,mp,xp"]
+visible = false
+texture_filter = 3
+texture_repeat = 1
+layout_mode = 0
+offset_left = 93.5
+offset_top = 0.5
+offset_right = 245.5
+offset_bottom = 24.5
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_0i1j5")
+theme_override_font_sizes/font_size = 24
+text = "su진 Jjqrpx"
+
+[node name="id3" type="Label" parent="hud/hpbox/hp,mp,xp"]
+visible = false
+texture_filter = 3
+texture_repeat = 1
+layout_mode = 0
+offset_left = 94.5
+offset_top = 23.0
+offset_right = 246.5
+offset_bottom = 47.0
+scale = Vector2(0.5, 0.5)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_0i1j5")
+theme_override_font_sizes/font_size = 24
+text = "su진 Jjqrpx"
+
+[node name="id2" type="Label" parent="hud/hpbox/hp,mp,xp"]
+texture_filter = 3
+texture_repeat = 1
+layout_mode = 0
+offset_left = 4.5
+offset_top = 3.5
+offset_right = 114.5
+offset_bottom = 17.5
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("4_apjy4")
+theme_override_font_sizes/font_size = 12
+text = "Ksu진Jjqrpx"
+
+[node name="level" type="Label" parent="hud/hpbox/hp,mp,xp"]
+texture_filter = 3
+layout_mode = 0
+offset_left = 5.0
+offset_top = 19.0
+offset_right = 33.0
+offset_bottom = 34.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("4_5n1hp")
+theme_override_font_sizes/font_size = 10
+theme_override_styles/normal = SubResource("StyleBoxTexture_uo2fv")
+text = "258"
+
+[node name="barbox" type="VBoxContainer" parent="hud/hpbox/hp,mp,xp"]
+visible = false
+layout_mode = 0
+offset_left = 24.5
+offset_top = 19.5
+offset_right = 104.5
+offset_bottom = 67.5
+scale = Vector2(0.7, 0.7)
+theme_override_constants/separation = 0
+
+[node name="HPbar" type="TextureProgressBar" parent="hud/hpbox/hp,mp,xp/barbox"]
+layout_mode = 2
+texture_under = ExtResource("3_hd3ao")
+texture_progress = ExtResource("6_vh1iw")
+
+[node name="MPBar" type="TextureProgressBar" parent="hud/hpbox/hp,mp,xp/barbox"]
+layout_mode = 2
+texture_under = ExtResource("5_mphia")
+texture_progress = ExtResource("6_0m4u7")
+
+[node name="XPBar" type="TextureProgressBar" parent="hud/hpbox/hp,mp,xp/barbox"]
+layout_mode = 2
+texture_under = ExtResource("7_apjy4")
+texture_progress = ExtResource("8_5n1hp")
+
+[node name="barbox2" type="VBoxContainer" parent="hud/hpbox/hp,mp,xp"]
+layout_mode = 0
+offset_left = 24.5
+offset_top = 19.5
+offset_right = 104.5
+offset_bottom = 67.5
+scale = Vector2(0.7, 0.7)
+theme_override_constants/separation = 0
+
+[node name="HPbar" type="TextureProgressBar" parent="hud/hpbox/hp,mp,xp/barbox2"]
+layout_mode = 2
+texture_under = ExtResource("11_fgtve")
+texture_progress = ExtResource("6_vh1iw")
+
+[node name="MPBar" type="TextureProgressBar" parent="hud/hpbox/hp,mp,xp/barbox2"]
+layout_mode = 2
+texture_under = ExtResource("12_03o4m")
+texture_progress = ExtResource("13_dl6ww")
+
+[node name="XPBar" type="TextureProgressBar" parent="hud/hpbox/hp,mp,xp/barbox2"]
+layout_mode = 2
+texture_under = ExtResource("14_8f8xv")
+texture_progress = ExtResource("15_v0qwq")
+
+[node name="coinbox" type="Panel" parent="hud/hpbox/hp,mp,xp"]
+layout_mode = 0
+offset_left = 18.5
+offset_top = 46.0
+offset_right = 98.5
+offset_bottom = 61.0
+localize_numeral_system = false
+theme_override_styles/panel = SubResource("StyleBoxTexture_5n1hp")
+
+[node name="coin" type="TextureRect" parent="hud/hpbox/hp,mp,xp/coinbox"]
+layout_mode = 0
+offset_left = 2.5
+offset_top = -3.5
+offset_right = 18.5
+offset_bottom = 12.5
+texture = ExtResource("10_0m4u7")
+
+[node name="coinlabel" type="Label" parent="hud/hpbox/hp,mp,xp/coinbox"]
+layout_mode = 0
+offset_left = 18.0
+offset_top = -1.0
+offset_right = 63.0
+offset_bottom = 22.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("4_5n1hp")
+theme_override_font_sizes/font_size = 10
+text = "98745"
+
+[node name="buttons" type="Control" parent="hud"]
+layout_mode = 3
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -192.0
+offset_top = -84.0
+grow_horizontal = 2
+grow_vertical = 0
+scale = Vector2(2, 2)
+
+[node name="buttonbox" type="HBoxContainer" parent="hud/buttons"]
+layout_mode = 0
+offset_right = 116.0
+offset_bottom = 40.0
+scale = Vector2(2, 2)
+theme_override_constants/separation = 0
+
+[node name="info" type="TextureButton" parent="hud/buttons/buttonbox"]
+layout_mode = 2
+texture_normal = ExtResource("16_mgfyp")
+texture_pressed = ExtResource("17_ptr5m")
+texture_hover = ExtResource("17_ptr5m")
+
+[node name="inventory" type="TextureButton" parent="hud/buttons/buttonbox"]
+layout_mode = 2
+texture_normal = ExtResource("18_of3ib")
+texture_pressed = ExtResource("19_7600b")
+texture_hover = ExtResource("19_7600b")
+
+[node name="quest" type="TextureButton" parent="hud/buttons/buttonbox"]
+layout_mode = 2
+texture_normal = ExtResource("20_e558t")
+texture_pressed = ExtResource("21_frrke")
+texture_hover = ExtResource("21_frrke")
+
+[node name="gps" type="TextureButton" parent="hud/buttons/buttonbox"]
+layout_mode = 2
+texture_normal = ExtResource("22_vh1iw")
+texture_pressed = ExtResource("23_fgtve")
+texture_hover = ExtResource("23_fgtve")
+
+[node name="keyboard" type="TextureButton" parent="hud/buttons/buttonbox"]
+layout_mode = 2
+texture_normal = ExtResource("24_03o4m")
+texture_pressed = ExtResource("25_dl6ww")
+texture_hover = ExtResource("25_dl6ww")
+
+[node name="settings" type="TextureButton" parent="hud/buttons/buttonbox"]
+layout_mode = 2
+texture_normal = ExtResource("26_8f8xv")
+texture_pressed = ExtResource("27_v0qwq")
+texture_hover = ExtResource("27_v0qwq")
+
+[node name="minimap" type="Control" parent="hud"]
+layout_mode = 3
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -340.0
+offset_top = 20.0
+offset_bottom = 40.0
+grow_horizontal = 0
+
+[node name="minimap" type="Panel" parent="hud/minimap"]
+layout_mode = 0
+theme_override_styles/panel = SubResource("StyleBoxTexture_uxdf7")
+
+[node name="box" type="TextureRect" parent="hud/minimap/minimap"]
+layout_mode = 0
+offset_right = 160.0
+offset_bottom = 80.0
+scale = Vector2(2, 2)
+texture = ExtResource("13_5n1hp")
+
+[node name="stageprograss" type="HBoxContainer" parent="hud/minimap/minimap"]
+layout_mode = 0
+offset_left = 15.0
+offset_top = 15.0
+offset_right = 175.0
+offset_bottom = 31.0
+theme_override_constants/separation = -1
+
+[node name="ball" type="TextureRect" parent="hud/minimap/minimap/stageprograss"]
+layout_mode = 2
+texture = SubResource("CompressedTexture2D_5357l")
+
+[node name="ball2" type="TextureRect" parent="hud/minimap/minimap/stageprograss"]
+layout_mode = 2
+texture = SubResource("CompressedTexture2D_iypfu")
+
+[node name="ball3" type="TextureRect" parent="hud/minimap/minimap/stageprograss"]
+layout_mode = 2
+texture = SubResource("CompressedTexture2D_qpprf")
+
+[node name="ball4" type="TextureRect" parent="hud/minimap/minimap/stageprograss"]
+layout_mode = 2
+texture = ExtResource("14_3swnk")
+
+[node name="ball5" type="TextureRect" parent="hud/minimap/minimap/stageprograss"]
+layout_mode = 2
+texture = ExtResource("15_qkknv")
+
+[node name="ball6" type="TextureRect" parent="hud/minimap/minimap/stageprograss"]
+layout_mode = 2
+texture = ExtResource("15_qkknv")
+
+[node name="ball7" type="TextureRect" parent="hud/minimap/minimap/stageprograss"]
+layout_mode = 2
+texture = ExtResource("15_qkknv")
+
+[node name="saveskill_zxcv" type="HBoxContainer" parent="hud"]
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -352.0
+offset_top = -100.0
+grow_horizontal = 0
+grow_vertical = 0
+scale = Vector2(2, 2)
+theme_override_constants/separation = 42
+
+[node name="z" type="Control" parent="hud/saveskill_zxcv"]
+layout_mode = 2
+
+[node name="skillz" type="TextureRect" parent="hud/saveskill_zxcv/z"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="key" type="TextureRect" parent="hud/saveskill_zxcv/z"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+texture = ExtResource("28_ptr5m")
+
+[node name="z" type="Label" parent="hud/saveskill_zxcv/z/key"]
+layout_mode = 0
+offset_left = 5.0
+offset_top = 23.0
+offset_right = 21.0
+offset_bottom = 39.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("4_apjy4")
+theme_override_font_sizes/font_size = 12
+text = "Z"
+
+[node name="x" type="Control" parent="hud/saveskill_zxcv"]
+layout_mode = 2
+
+[node name="skillx" type="TextureRect" parent="hud/saveskill_zxcv/x"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="key" type="TextureRect" parent="hud/saveskill_zxcv/x"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+texture = ExtResource("28_ptr5m")
+
+[node name="x" type="Label" parent="hud/saveskill_zxcv/x/key"]
+layout_mode = 0
+offset_left = 5.0
+offset_top = 23.0
+offset_right = 21.0
+offset_bottom = 39.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("4_apjy4")
+theme_override_font_sizes/font_size = 12
+text = "X"
+
+[node name="c" type="Control" parent="hud/saveskill_zxcv"]
+layout_mode = 2
+
+[node name="skillc" type="TextureRect" parent="hud/saveskill_zxcv/c"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="key" type="TextureRect" parent="hud/saveskill_zxcv/c"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+texture = ExtResource("28_ptr5m")
+
+[node name="c" type="Label" parent="hud/saveskill_zxcv/c/key"]
+layout_mode = 0
+offset_left = 5.0
+offset_top = 23.0
+offset_right = 21.0
+offset_bottom = 39.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("4_apjy4")
+theme_override_font_sizes/font_size = 12
+text = "C"
+
+[node name="v" type="Control" parent="hud/saveskill_zxcv"]
+layout_mode = 2
+
+[node name="skillv" type="TextureRect" parent="hud/saveskill_zxcv/v"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="key" type="TextureRect" parent="hud/saveskill_zxcv/v"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+texture = ExtResource("28_ptr5m")
+
+[node name="c" type="Label" parent="hud/saveskill_zxcv/v/key"]
+layout_mode = 0
+offset_left = 5.0
+offset_top = 23.0
+offset_right = 21.0
+offset_bottom = 39.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("4_apjy4")
+theme_override_font_sizes/font_size = 12
+text = "V"
+
+[node name="saveskill_asdf" type="HBoxContainer" parent="hud"]
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -352.0
+offset_top = -184.0
+grow_horizontal = 0
+grow_vertical = 0
+scale = Vector2(2, 2)
+theme_override_constants/separation = 42
+
+[node name="a" type="Control" parent="hud/saveskill_asdf"]
+layout_mode = 2
+
+[node name="skilla" type="TextureRect" parent="hud/saveskill_asdf/a"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="key" type="TextureRect" parent="hud/saveskill_asdf/a"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+texture = ExtResource("28_ptr5m")
+
+[node name="z" type="Label" parent="hud/saveskill_asdf/a/key"]
+layout_mode = 0
+offset_left = 5.0
+offset_top = 23.0
+offset_right = 21.0
+offset_bottom = 39.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("4_apjy4")
+theme_override_font_sizes/font_size = 12
+text = "A"
+
+[node name="s" type="Control" parent="hud/saveskill_asdf"]
+layout_mode = 2
+
+[node name="skills" type="TextureRect" parent="hud/saveskill_asdf/s"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="key" type="TextureRect" parent="hud/saveskill_asdf/s"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+texture = ExtResource("28_ptr5m")
+
+[node name="s" type="Label" parent="hud/saveskill_asdf/s/key"]
+layout_mode = 0
+offset_left = 5.0
+offset_top = 23.0
+offset_right = 21.0
+offset_bottom = 39.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("4_apjy4")
+theme_override_font_sizes/font_size = 12
+text = "S"
+
+[node name="d" type="Control" parent="hud/saveskill_asdf"]
+layout_mode = 2
+
+[node name="skilld" type="TextureRect" parent="hud/saveskill_asdf/d"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="key" type="TextureRect" parent="hud/saveskill_asdf/d"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+texture = ExtResource("28_ptr5m")
+
+[node name="d" type="Label" parent="hud/saveskill_asdf/d/key"]
+layout_mode = 0
+offset_left = 5.0
+offset_top = 23.0
+offset_right = 21.0
+offset_bottom = 39.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("4_apjy4")
+theme_override_font_sizes/font_size = 12
+text = "D"
+
+[node name="f" type="Control" parent="hud/saveskill_asdf"]
+layout_mode = 2
+
+[node name="skillf" type="TextureRect" parent="hud/saveskill_asdf/f"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="key" type="TextureRect" parent="hud/saveskill_asdf/f"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+texture = ExtResource("28_ptr5m")
+
+[node name="f" type="Label" parent="hud/saveskill_asdf/f/key"]
+layout_mode = 0
+offset_left = 5.0
+offset_top = 23.0
+offset_right = 21.0
+offset_bottom = 39.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("4_apjy4")
+theme_override_font_sizes/font_size = 12
+text = "F"
