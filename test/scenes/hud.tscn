@@ -1,4 +1,4 @@
-[gd_scene load_steps=40 format=3 uid="uid://d2hkbelpsicum"]
+[gd_scene load_steps=41 format=3 uid="uid://d2hkbelpsicum"]
 
 [ext_resource type="Texture2D" uid="uid://cnp8lp6g1ms30" path="res://assets/hud/bar_memo.png" id="1_ahhtf"]
 [ext_resource type="FontFile" uid="uid://qgrsv3k5yf3o" path="res://fonts/PF스타더스트 3.0 S Bold.ttf" id="2_0i1j5"]
@@ -21,6 +21,7 @@
 [ext_resource type="Texture2D" uid="uid://cfbjrjfce1nv8" path="res://assets/hud/bar_96xp.png" id="15_v0qwq"]
 [ext_resource type="Texture2D" uid="uid://bg2tyrf3tohnd" path="res://assets/hud/button1.png" id="16_mgfyp"]
 [ext_resource type="Texture2D" uid="uid://3haho6ir43wt" path="res://assets/hud/button11.png" id="17_ptr5m"]
+[ext_resource type="FontFile" uid="uid://p2tvounnjj2x" path="res://fonts/Galmuri14.ttf" id="17_vh1iw"]
 [ext_resource type="Texture2D" uid="uid://bow1no2dg6n6h" path="res://assets/hud/button2.png" id="18_of3ib"]
 [ext_resource type="Texture2D" uid="uid://x00rmf4rmykf" path="res://assets/hud/button22.png" id="19_7600b"]
 [ext_resource type="Texture2D" uid="uid://bdl3qlmis7i2g" path="res://assets/hud/button3.png" id="20_e558t"]
@@ -206,6 +207,17 @@ theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
 theme_override_fonts/font = ExtResource("4_5n1hp")
 theme_override_font_sizes/font_size = 10
 text = "98745"
+
+[node name="Label" type="Label" parent="hud/hpbox"]
+layout_mode = 0
+offset_left = 86.0
+offset_top = 43.0
+offset_right = 151.0
+offset_bottom = 66.0
+theme_override_colors/font_outline_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("17_vh1iw")
+theme_override_font_sizes/font_size = 15
+text = "123/586"
 
 [node name="buttons" type="Control" parent="hud"]
 layout_mode = 3

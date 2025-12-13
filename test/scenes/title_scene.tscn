@@ -3,7 +3,7 @@
 [ext_resource type="Texture2D" uid="uid://blytxqgnf7yc8" path="res://assets/backgrounds/bg001.png" id="1_qyslj"]
 [ext_resource type="Texture2D" uid="uid://n2n2muv6ht4e" path="res://assets/backgrounds/bg002.png" id="2_cbsd1"]
 [ext_resource type="Texture2D" uid="uid://2dci4plwv1nm" path="res://assets/backgrounds/bg003.png" id="3_mqf50"]
-[ext_resource type="Texture2D" uid="uid://b2fkbcn57i5is" path="res://assets/backgrounds/bgtitlehero.png" id="4_t34vg"]
+[ext_resource type="Texture2D" uid="uid://b2fkbcn57i5is" path="res://assets/hud/bgtitlehero.png" id="4_t34vg"]
 [ext_resource type="FontFile" uid="uid://djh3iakfhnuf6" path="res://fonts/DNFBitBitTTF.ttf" id="5_bq8jb"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_qyslj"]

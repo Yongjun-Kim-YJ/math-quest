@@ -1,0 +1,80 @@
+[gd_scene load_steps=12 format=3 uid="uid://7035ye3rut1j"]
+
+[ext_resource type="Texture2D" uid="uid://ef4gvjgprwr6" path="res://assets/objects/key.png" id="1_yhuoy"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_tfk8p"]
+atlas = ExtResource("1_yhuoy")
+region = Rect2(0, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_nghci"]
+atlas = ExtResource("1_yhuoy")
+region = Rect2(16, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_76smn"]
+atlas = ExtResource("1_yhuoy")
+region = Rect2(32, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_uiwll"]
+atlas = ExtResource("1_yhuoy")
+region = Rect2(48, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_thoaa"]
+atlas = ExtResource("1_yhuoy")
+region = Rect2(64, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_d83wr"]
+atlas = ExtResource("1_yhuoy")
+region = Rect2(80, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_y8bhu"]
+atlas = ExtResource("1_yhuoy")
+region = Rect2(96, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_11fvj"]
+atlas = ExtResource("1_yhuoy")
+region = Rect2(112, 0, 16, 16)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_l5rr0"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_tfk8p")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_nghci")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_76smn")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_uiwll")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_thoaa")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_d83wr")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_y8bhu")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_11fvj")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_885km"]
+size = Vector2(10, 17)
+
+[node name="key" type="Area2D"]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_l5rr0")
+frame_progress = 0.136123
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(1, 0.5)
+shape = SubResource("RectangleShape2D_885km")
