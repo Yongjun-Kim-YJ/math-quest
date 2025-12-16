@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dlekbumcupyqs"
-path="res://.godot/imported/bar_xpbox.png-1cbd79855e598460dc940b4b801d2275.ctex"
+uid="uid://bafkyn66wstue"
+path="res://.godot/imported/portal.png-7e21310e61539a20e77fd0d2441bacd1.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/hud/bar_xpbox.png"
-dest_files=["res://.godot/imported/bar_xpbox.png-1cbd79855e598460dc940b4b801d2275.ctex"]
+source_file="res://assets/objects/portal.png"
+dest_files=["res://.godot/imported/portal.png-7e21310e61539a20e77fd0d2441bacd1.ctex"]
 
 [params]
 
