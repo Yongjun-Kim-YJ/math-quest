@@ -25,11 +25,12 @@ func _physics_process(delta):
 		print(체력)
 		print("토끼 공격 당함 (-34)")
 		스프라이트.play("공격당함")
+		체력-=34
+		$TextureProgressBar.value -=34
 		velocity.x = 0
 		스프라이트.flip_h = false
 		print("1111111")
 		await 스프라이트.animation_finished
-		체력-=34
 		스프라이트.play("달리기")
 		velocity.x = -이동속도
 		print(체력)

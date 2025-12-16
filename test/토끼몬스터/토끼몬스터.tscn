@@ -222,16 +222,18 @@ collision_mask = 2
 script = ExtResource("1_sdbmi")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
-position = Vector2(-3, -16)
+position = Vector2(-2, -16)
 sprite_frames = SubResource("SpriteFrames_qmkm0")
 animation = &"사망"
 autoplay = "기본"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+visible = false
 position = Vector2(-1, -10)
 shape = SubResource("CircleShape2D_dyuie")
 
 [node name="캐릭터감지범위" type="Area2D" parent="."]
+visible = false
 collision_layer = 32
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="캐릭터감지범위"]
@@ -239,6 +241,7 @@ position = Vector2(-1, -8)
 shape = SubResource("CircleShape2D_qmvmy")
 
 [node name="피격범위" type="Area2D" parent="."]
+visible = false
 collision_layer = 32
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="피격범위"]
@@ -247,6 +250,7 @@ rotation = -1.5708
 shape = SubResource("CapsuleShape2D_kp04r")
 
 [node name="공격범위" type="Area2D" parent="."]
+visible = false
 collision_layer = 32
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="공격범위"]
@@ -255,12 +259,19 @@ rotation = -1.5708
 shape = SubResource("CapsuleShape2D_sdbmi")
 
 [node name="TextureProgressBar" type="TextureProgressBar" parent="."]
-offset_left = -14.3333
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -12.0
 offset_top = -31.0
-offset_right = 81.6667
-offset_bottom = 9.0
-scale = Vector2(0.3, 0.2)
-value = 50.0
+offset_right = 84.0
+offset_bottom = -15.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(0.25, 0.125)
+value = 100.0
 texture_under = ExtResource("3_nld0e")
 texture_progress = ExtResource("4_mjoyo")
 
