@@ -1,7 +1,9 @@
-[gd_scene load_steps=32 format=3 uid="uid://bm0a4j6vu274v"]
+[gd_scene load_steps=34 format=3 uid="uid://bm0a4j6vu274v"]
 
 [ext_resource type="Script" uid="uid://dm71kpkjw1ldv" path="res://토끼몬스터/토끼몬스터.gd" id="1_sdbmi"]
 [ext_resource type="Texture2D" uid="uid://dcjvyi3vc4n6x" path="res://prototype/enemy.png" id="1_xmrww"]
+[ext_resource type="Texture2D" uid="uid://cpl72rgn5vf8q" path="res://assets/hud/bar_96hpbox.png" id="3_nld0e"]
+[ext_resource type="Texture2D" uid="uid://v1t6rqdfg1os" path="res://assets/hud/bar_96hp.png" id="4_mjoyo"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_dyuie"]
 atlas = ExtResource("1_xmrww")
@@ -251,6 +253,16 @@ collision_layer = 32
 position = Vector2(-1, -11)
 rotation = -1.5708
 shape = SubResource("CapsuleShape2D_sdbmi")
+
+[node name="TextureProgressBar" type="TextureProgressBar" parent="."]
+offset_left = -14.3333
+offset_top = -31.0
+offset_right = 81.6667
+offset_bottom = 9.0
+scale = Vector2(0.3, 0.2)
+value = 50.0
+texture_under = ExtResource("3_nld0e")
+texture_progress = ExtResource("4_mjoyo")
 
 [connection signal="body_entered" from="캐릭터감지범위" to="." method="_on_캐릭터감지범위_body_entered"]
 [connection signal="body_entered" from="피격범위" to="." method="_on_피격범위_body_entered"]
