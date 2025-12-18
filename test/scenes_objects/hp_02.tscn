@@ -1,0 +1,15 @@
+[gd_scene load_steps=3 format=3 uid="uid://krdgrhm6hanc"]
+
+[ext_resource type="Texture2D" uid="uid://blckd8nr3cy8v" path="res://assets/objects/hp02.png" id="1_27p2s"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_fg6a0"]
+size = Vector2(10, 10)
+
+[node name="hp02" type="Area2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_27p2s")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, 3)
+shape = SubResource("RectangleShape2D_fg6a0")

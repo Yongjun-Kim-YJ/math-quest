@@ -1,0 +1,15 @@
+[gd_scene load_steps=3 format=3 uid="uid://c2p84pk643nbi"]
+
+[ext_resource type="Texture2D" uid="uid://ctftb3rop5y56" path="res://assets/objects/fruit07.png" id="1_18t67"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ue10u"]
+size = Vector2(9, 7)
+
+[node name="fruit07" type="Area2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_18t67")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0.5, 4.5)
+shape = SubResource("RectangleShape2D_ue10u")
