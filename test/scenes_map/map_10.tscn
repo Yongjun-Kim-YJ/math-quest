@@ -1,11 +1,14 @@
-[gd_scene load_steps=19 format=4 uid="uid://cjkbkuj2yorar"]
+[gd_scene load_steps=22 format=4 uid="uid://cjkbkuj2yorar"]
 
 [ext_resource type="Texture2D" uid="uid://bberx21bba6tp" path="res://assets/backgrounds/bg101.png" id="1_crj18"]
 [ext_resource type="Texture2D" uid="uid://dahyf1uj6jxmq" path="res://assets/backgrounds/bg102.png" id="2_6sexs"]
 [ext_resource type="Texture2D" uid="uid://wbwhxp3ys2tq" path="res://assets/backgrounds/bg103.png" id="3_bmjsq"]
+[ext_resource type="PackedScene" uid="uid://c6kpvqrjbsnu8" path="res://scenes_objects/fruit_01.tscn" id="6_2iwlv"]
 [ext_resource type="PackedScene" uid="uid://bqabb3t2x85sq" path="res://캐릭터/캐릭터.tscn" id="6_j0383"]
 [ext_resource type="Texture2D" uid="uid://303j6k1dnv85" path="res://assets/tiles/tile10.png" id="6_nqdxh"]
 [ext_resource type="Texture2D" uid="uid://djn5qkkja7cg1" path="res://assets/tiles/tile101.png" id="6_xml0a"]
+[ext_resource type="PackedScene" uid="uid://6sckq8yh2nan" path="res://scenes_objects/chest_blue.tscn" id="7_gucpg"]
+[ext_resource type="PackedScene" uid="uid://dg3uvm1o2vsh" path="res://scenes_monster/m_01.tscn" id="8_bixxk"]
 [ext_resource type="Texture2D" uid="uid://btud20gf2x2ul" path="res://assets/tiles/tile10keycap.png" id="8_kmmnd"]
 
 [sub_resource type="Animation" id="Animation_xml0a"]
@@ -541,6 +544,20 @@ tile_set = SubResource("TileSet_b4g5a")
 scale = Vector2(4, 4)
 tile_map_data = PackedByteArray("AAA3AA0AAAALAAMAAAA3AAwAAAALAAIAAAA3AAsAAAALAAIAAAA3AAoAAAALAAIAAAA3AAkAAAALAAIAAAA3AAgAAAALAAEAAABYAAwAAAALAAMAAABYAAcAAAALAAIAAABYAAgAAAALAAIAAABYAAkAAAALAAIAAABYAAoAAAALAAIAAABYAAsAAAALAAIAAABYAAUAAAALAAAAAABYAAYAAAALAAEAAABtAAQAAAALAAAAAABtAAUAAAALAAEAAABtAAYAAAALAAIAAABtAAcAAAALAAIAAABtAAgAAAALAAIAAABtAAkAAAALAAIAAABtAAoAAAALAAMAAABxAAIAAAALAAMAAABxAAEAAAALAAIAAABxAAAAAAALAAIAAABxAP//AAALAAIAAABxAP7/AAALAAIAAABxAP3/AAALAAIAAABxAPv/AAALAAAAAABxAPz/AAALAAEAAACdAP//AAALAAEAAACdAAAAAAALAAIAAACdAAEAAAALAAIAAACdAAIAAAALAAIAAACdAAMAAAALAAIAAACdAAQAAAALAAIAAACdAAUAAAALAAMAAACrAAQAAAALAAAAAACrAAUAAAALAAEAAACrAAYAAAALAAIAAACrAAcAAAALAAIAAACrAAgAAAALAAIAAACrAAkAAAALAAIAAACrAAoAAAALAAMAAADUAAIAAAALAAAAAADUAAMAAAALAAEAAADUAAQAAAALAAIAAADUAAUAAAALAAIAAADUAAYAAAALAAIAAADUAAcAAAALAAIAAADUAAgAAAALAAIAAADUAAkAAAALAAIAAADUAAoAAAALAAMAAAA3AAcAAAALAAAAAAA=")
 tile_set = SubResource("TileSet_ldgfb")
+
+[node name="fruit01" parent="." instance=ExtResource("6_2iwlv")]
+position = Vector2(386, 940)
+scale = Vector2(2, 2)
+
+[node name="chest_blue" parent="." instance=ExtResource("7_gucpg")]
+position = Vector2(283, 684)
+scale = Vector2(2, 2)
+
+[node name="m01" parent="." instance=ExtResource("8_bixxk")]
+position = Vector2(711, 937)
+scale = Vector2(2, 2)
+collision_layer = 32
+collision_mask = 32
 
 [node name="캐릭터" parent="." instance=ExtResource("6_j0383")]
 position = Vector2(292, 960)
