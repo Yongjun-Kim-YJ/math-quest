@@ -1,7 +1,7 @@
 [gd_scene load_steps=12 format=3 uid="uid://6sckq8yh2nan"]
 
-[ext_resource type="Texture2D" uid="uid://cpldvtxrtemtm" path="res://assets/objects/chest_open.png" id="1_usexs"]
-[ext_resource type="Texture2D" uid="uid://chhbi8yxketpg" path="res://assets/objects/chest.png" id="2_iun4b"]
+[ext_resource type="Texture2D" uid="uid://dahykrwt303iy" path="res://assets/objects/chest_open.png" id="1_usexs"]
+[ext_resource type="Texture2D" uid="uid://bhnhn11t0hrjv" path="res://assets/objects/chest.png" id="2_iun4b"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_qkg52"]
 atlas = ExtResource("1_usexs")
@@ -78,6 +78,7 @@ size = Vector2(30, 24)
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_1tolb")
 animation = &"opn"
+frame_progress = 0.442192
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(0, 4)

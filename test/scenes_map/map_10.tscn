@@ -546,15 +546,15 @@ tile_map_data = PackedByteArray("AAA3AA0AAAALAAMAAAA3AAwAAAALAAIAAAA3AAsAAAALAAI
 tile_set = SubResource("TileSet_ldgfb")
 
 [node name="fruit01" parent="." instance=ExtResource("6_2iwlv")]
-position = Vector2(386, 940)
+position = Vector2(386, 944)
 scale = Vector2(2, 2)
 
 [node name="chest_blue" parent="." instance=ExtResource("7_gucpg")]
-position = Vector2(283, 684)
+position = Vector2(292, 672)
 scale = Vector2(2, 2)
 
 [node name="m01" parent="." instance=ExtResource("8_bixxk")]
-position = Vector2(711, 937)
+position = Vector2(711, 944)
 scale = Vector2(2, 2)
 collision_layer = 32
 collision_mask = 32
