@@ -1,4 +1,4 @@
-[gd_scene load_steps=247 format=3 uid="uid://bqabb3t2x85sq"]
+[gd_scene load_steps=249 format=3 uid="uid://bqabb3t2x85sq"]
 
 [ext_resource type="Script" uid="uid://dg8kfyp3a75wf" path="res://캐릭터/캐릭터.gd" id="1_btloq"]
 [ext_resource type="Texture2D" uid="uid://bo7qhv0enot1r" path="res://Godot Engine 실전 2D 어드벤처 게임 제작 - 자료/캐릭터/Ninja Frog/Idle (32x32).png" id="1_wsdg4"]
@@ -35,6 +35,7 @@
 [ext_resource type="Texture2D" uid="uid://byvy1sg3g0ik7" path="res://prototype/hero/top_01_atk_punchstraight.png" id="27_issmq"]
 [ext_resource type="Texture2D" uid="uid://da7hov56xvcnp" path="res://prototype/hero/bottom_01_climbrope.png" id="28_qs1br"]
 [ext_resource type="Texture2D" uid="uid://b82vwu1vemd" path="res://prototype/hero/bottom_01_atk_punchstraight.png" id="34_xpa7u"]
+[ext_resource type="Script" uid="uid://55fj7svn4ohs" path="res://HUD/hit_area_2d.gd" id="36_xpa7u"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_ejoj1"]
 atlas = ExtResource("1_wsdg4")
@@ -2584,6 +2585,9 @@ size = Vector2(14, 20)
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_wjurc"]
 size = Vector2(14, 20)
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_4tnle"]
+size = Vector2(16, 10)
+
 [node name="캐릭터" type="CharacterBody2D"]
 scale = Vector2(4, 4)
 collision_mask = 2
@@ -2594,25 +2598,26 @@ script = ExtResource("1_btloq")
 [node name="기본Body" type="AnimatedSprite2D" parent="."]
 position = Vector2(0, -16)
 sprite_frames = SubResource("SpriteFrames_gypvn")
-animation = &"공격당함"
+animation = &"펀치"
 autoplay = "서있기"
+frame = 2
 
 [node name="머리" type="AnimatedSprite2D" parent="."]
 position = Vector2(0, -16)
 sprite_frames = SubResource("SpriteFrames_m311d")
-animation = &"공격당함"
+animation = &"펀치"
 autoplay = "서있기"
 
 [node name="상의" type="AnimatedSprite2D" parent="."]
 position = Vector2(0, -16)
 sprite_frames = SubResource("SpriteFrames_edmkm")
-animation = &"공격당함"
+animation = &"펀치"
 autoplay = "서있기"
 
 [node name="하의" type="AnimatedSprite2D" parent="."]
 position = Vector2(0, -16)
 sprite_frames = SubResource("SpriteFrames_djc8s")
-animation = &"공격당함"
+animation = &"펀치"
 autoplay = "서있기"
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
@@ -2637,10 +2642,21 @@ shape = SubResource("RectangleShape2D_wjurc")
 position = Vector2(-0.25, 0)
 collision_layer = 0
 collision_mask = 32
+monitoring = false
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="피격Area2D"]
 position = Vector2(0.25, -10)
 shape = SubResource("RectangleShape2D_wjurc")
+
+[node name="HitArea2D" type="Area2D" parent="."]
+collision_layer = 32
+collision_mask = 0
+script = ExtResource("36_xpa7u")
+metadata/_custom_type_script = "uid://55fj7svn4ohs"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="HitArea2D"]
+position = Vector2(9, -9.5)
+shape = SubResource("RectangleShape2D_4tnle")
 
 [connection signal="body_entered" from="LadderArea2D" to="." method="_on_body_entered"]
 [connection signal="body_exited" from="LadderArea2D" to="." method="_on_body_exited"]

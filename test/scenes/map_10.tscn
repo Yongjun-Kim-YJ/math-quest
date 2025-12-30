@@ -1,4 +1,4 @@
-[gd_scene load_steps=19 format=4 uid="uid://cjkbkuj2yorar"]
+[gd_scene load_steps=20 format=4 uid="uid://cjkbkuj2yorar"]
 
 [ext_resource type="Texture2D" uid="uid://bberx21bba6tp" path="res://assets/backgrounds/bg101.png" id="1_crj18"]
 [ext_resource type="Texture2D" uid="uid://dahyf1uj6jxmq" path="res://assets/backgrounds/bg102.png" id="2_6sexs"]
@@ -7,6 +7,7 @@
 [ext_resource type="Texture2D" uid="uid://303j6k1dnv85" path="res://assets/tiles/tile10.png" id="6_nqdxh"]
 [ext_resource type="Texture2D" uid="uid://djn5qkkja7cg1" path="res://assets/tiles/tile101.png" id="6_xml0a"]
 [ext_resource type="Texture2D" uid="uid://btud20gf2x2ul" path="res://assets/tiles/tile10keycap.png" id="8_kmmnd"]
+[ext_resource type="PackedScene" uid="uid://bm0a4j6vu274v" path="res://토끼몬스터/토끼몬스터.tscn" id="8_xml0a"]
 
 [sub_resource type="Animation" id="Animation_xml0a"]
 length = 0.001
@@ -564,3 +565,6 @@ motion_mirroring = Vector2(1500, 0)
 [node name="front clouds1" type="Sprite2D" parent="parallaxFront/ParallaxLayer3"]
 position = Vector2(1198, 1051)
 texture = ExtResource("3_bmjsq")
+
+[node name="토끼몬스터" parent="." instance=ExtResource("8_xml0a")]
+position = Vector2(1001, 780)
