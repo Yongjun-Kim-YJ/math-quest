@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dy0g5m8j7j8cg"
-path="res://.godot/imported/4-trees.png-cc9ea249d0ca8f478f1c5df9850c0046.ctex"
+uid="uid://mynnah4fsfpk"
+path="res://.godot/imported/bg128.png-91428bacbf42f6ba5c8a9023af640369.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/backgrounds/4-trees.png"
-dest_files=["res://.godot/imported/4-trees.png-cc9ea249d0ca8f478f1c5df9850c0046.ctex"]
+source_file="res://assets/backgrounds/bg128.png"
+dest_files=["res://.godot/imported/bg128.png-91428bacbf42f6ba5c8a9023af640369.ctex"]
 
 [params]
 
