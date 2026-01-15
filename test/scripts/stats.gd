@@ -50,14 +50,36 @@ func remove_buff(buff: StatBuff) -> void:
 	recalculate_stats.call_deferred()
 
 func recalculate_stats() -> void:
-	
+	var stat_multipliers: Dictionary = {} # Amount to multiply included stats by
+	var stat_addends: Dictionary = {} # Amount to add to included stats
+	for buff in stat_buffs:
+		var stat_name: String = BuffableStats.keys()[buff.stat].to_lower()
+		match buff.buff_type:
+			StatBuff.BuffType.ADD:
+				if not stat_addends.has(stat_name):
+					stat_addends[stat_name] = 0.0
+				stat_addends[stat_name] += buff.buff_amount
+				
+			StatBuff.BuffType.MULTIPLY:
+				if not stat_multipliers.has(stat_name):
+					stat_multipliers[stat_name] = 1.0
+				stat_multipliers[stat_name] += buff.buff_amount
+				
+				if stat_multipliers[stat_name] < 0.0:
+					stat_multipliers[stat_name] = 0.0
 	
 	var stat_sample_pos: float = (float(level)/100.0) - 0.01
 	current_max_health = base_max_health * STAT_CURVES[BuffableStats.MAX_HEALTH].sample(stat_sample_pos)
 	current_defense = base_defense * STAT_CURVES[BuffableStats.DEFENSE].sample(stat_sample_pos)
 	current_attack = base_attack * STAT_CURVES[BuffableStats.ATTACK].sample(stat_sample_pos)
-
-
+	
+	for stat_name in stat_multipliers:
+		var cur_property_name: String = str("current_" + stat_name)
+		set(cur_property_name, get(cur_property_name) * stat_multipliers[stat_name])
+	
+	for stat_name in stat_addends:
+		var cur_property_name: String = str("current_" + stat_name)
+		set(cur_property_name, get(cur_property_name) + stat_addends[stat_name])
 
 
 func _on_health_set(new_value: int) -> void:

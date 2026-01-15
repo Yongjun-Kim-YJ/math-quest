@@ -1,4 +1,4 @@
-[gd_scene load_steps=20 format=4 uid="uid://cjkbkuj2yorar"]
+[gd_scene load_steps=22 format=4 uid="uid://cjkbkuj2yorar"]
 
 [ext_resource type="Texture2D" uid="uid://bberx21bba6tp" path="res://assets/backgrounds/bg101.png" id="1_crj18"]
 [ext_resource type="Texture2D" uid="uid://dahyf1uj6jxmq" path="res://assets/backgrounds/bg102.png" id="2_6sexs"]
@@ -8,6 +8,7 @@
 [ext_resource type="Texture2D" uid="uid://djn5qkkja7cg1" path="res://assets/tiles/tile101.png" id="6_xml0a"]
 [ext_resource type="Texture2D" uid="uid://btud20gf2x2ul" path="res://assets/tiles/tile10keycap.png" id="8_kmmnd"]
 [ext_resource type="PackedScene" uid="uid://bm0a4j6vu274v" path="res://토끼몬스터/토끼몬스터.tscn" id="8_xml0a"]
+[ext_resource type="Script" uid="uid://chflkb784igag" path="res://scripts/stats.gd" id="9_kmmnd"]
 
 [sub_resource type="Animation" id="Animation_xml0a"]
 length = 0.001
@@ -502,6 +503,15 @@ custom_data_layer_2/name = "ladder"
 custom_data_layer_2/type = 1
 sources/0 = SubResource("TileSetAtlasSource_xml0a")
 
+[sub_resource type="Resource" id="Resource_onv0k"]
+resource_local_to_scene = true
+script = ExtResource("9_kmmnd")
+base_max_health = 100
+base_defense = 10
+base_attack = 10
+experience = 0
+metadata/_custom_type_script = "uid://chflkb784igag"
+
 [node name="map10" type="Node2D"]
 
 [node name="ParallaxBackground" type="ParallaxBackground" parent="."]
@@ -568,3 +578,4 @@ texture = ExtResource("3_bmjsq")
 
 [node name="토끼몬스터" parent="." instance=ExtResource("8_xml0a")]
 position = Vector2(1001, 780)
+stats = SubResource("Resource_onv0k")
