@@ -1,0 +1,71 @@
+[gd_scene load_steps=10 format=3 uid="uid://duk12amwmujii"]
+
+[ext_resource type="Script" uid="uid://bafiie3frtw8i" path="res://bounce_pad.gd" id="1_45otb"]
+[ext_resource type="Texture2D" uid="uid://bhlwqmqqsrhai" path="res://assets/objects/bounce_pad.png" id="2_hihy1"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_vvf4m"]
+atlas = ExtResource("2_hihy1")
+region = Rect2(0, 0, 16, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_303tp"]
+atlas = ExtResource("2_hihy1")
+region = Rect2(0, 0, 16, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_htvwy"]
+atlas = ExtResource("2_hihy1")
+region = Rect2(16, 0, 16, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_advhq"]
+atlas = ExtResource("2_hihy1")
+region = Rect2(32, 0, 16, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_vee2c"]
+atlas = ExtResource("2_hihy1")
+region = Rect2(48, 0, 16, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_okivi"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_vvf4m")
+}],
+"loop": true,
+"name": &"기본",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_303tp")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_htvwy")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_advhq")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_vee2c")
+}],
+"loop": false,
+"name": &"튀어오르기",
+"speed": 5.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_kgkyd"]
+size = Vector2(12, 3)
+
+[node name="bounce_pad" type="Area2D"]
+collision_layer = 8
+script = ExtResource("1_45otb")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(0, -16)
+sprite_frames = SubResource("SpriteFrames_okivi")
+animation = &"튀어오르기"
+speed_scale = 2.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, -6.5)
+shape = SubResource("RectangleShape2D_kgkyd")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
