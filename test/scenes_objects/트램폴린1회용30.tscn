@@ -1,0 +1,74 @@
+[gd_scene load_steps=10 format=3 uid="uid://bj6ks8mkn0eqn"]
+
+[ext_resource type="Texture2D" uid="uid://1xxjs6gty661" path="res://assets/objects/bounce_pad2.png" id="1_8jlwt"]
+[ext_resource type="Script" uid="uid://bo8tk3cfsfj1l" path="res://scenes_objects/트램폴린1회용30.gd" id="1_ph4hk"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ph4hk"]
+atlas = ExtResource("1_8jlwt")
+region = Rect2(0, 0, 16, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_5gvea"]
+atlas = ExtResource("1_8jlwt")
+region = Rect2(0, 0, 16, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_wiekt"]
+atlas = ExtResource("1_8jlwt")
+region = Rect2(16, 0, 16, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_37rqu"]
+atlas = ExtResource("1_8jlwt")
+region = Rect2(32, 0, 16, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_srpj6"]
+atlas = ExtResource("1_8jlwt")
+region = Rect2(48, 0, 16, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_ycah2"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ph4hk")
+}],
+"loop": true,
+"name": &"기본",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_5gvea")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_wiekt")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_37rqu")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_srpj6")
+}, {
+"duration": 1.0,
+"texture": null
+}],
+"loop": false,
+"name": &"튀어오르고사라짐30",
+"speed": 5.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_qj1qf"]
+size = Vector2(48, 5)
+
+[node name="트램폴린1회용30" type="Area2D"]
+script = ExtResource("1_ph4hk")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(0, -64)
+scale = Vector2(4, 4)
+sprite_frames = SubResource("SpriteFrames_ycah2")
+animation = &"기본"
+speed_scale = 2.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, -29.5)
+shape = SubResource("RectangleShape2D_qj1qf")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

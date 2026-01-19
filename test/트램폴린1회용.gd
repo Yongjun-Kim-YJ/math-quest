@@ -5,7 +5,7 @@ extends Area2D
 
 func _on_body_entered(body: Node2D) -> void:
 	if body.name == "캐릭터":
-		스프라이트.play("튀어오르기")
-		body.강제점프(1.6)
+		스프라이트.play( "튀어오르고사라짐")
+		body.강제점프(2)
 		
 		

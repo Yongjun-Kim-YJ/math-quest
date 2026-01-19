@@ -123,6 +123,7 @@ window/dpi/allow_hidpi=false
 2d_physics/layer_4="트램폴린"
 2d_physics/layer_5="포탈"
 2d_physics/layer_6="몬스터"
+2d_physics/layer_7="장애물"
 
 [rendering]
 

@@ -26,6 +26,8 @@ func _physics_process(delta):
 
 	_movement(delta)
 	move_and_slide()
+	
+	
 
 func _movement(delta):
 	# 캐릭터가 바닥에 있지 않은 경우에만 중력 적용
@@ -239,6 +241,48 @@ func _서있기():
 func _펀치():
 	스프라이트.play("펀치")
 
+
 #트램폴린 함수
 func 강제점프(강도):
 	velocity.y = 점프속도 * 강도
+
+
+
+#물과 스파이크를 처리하기 위해 GPT가 만든 함수
+func 체력감소(체력) :
+	HP -= 체력
+	print("체력 감소 (-" + str(체력) + ")")
+	스프라이트.play("공격당함")
+	머리.play("공격당함")
+	상의.play("공격당함")
+	하의.play("공격당함")
+	await 스프라이트.animation_finished
+	is_damaged = false
+	if !is_damaged:
+		_서있기()
+
+	
+	
+func _on_데미지_body_entered(body: Node2D) -> void:
+	if body == self:
+		var parent = get_parent()
+		var damage_amount := 10  # 기본값
+
+		# 데미지 Area2D에서 설정된 값 가져오기
+		if "damage_amount" in parent:
+			damage_amount = parent.damage_amount
+
+		print("데미지 존에 닿음! 피해량:", damage_amount)
+		체력감소(damage_amount)
+
+
+#장애물 설정을 위해 인프런을 보고 만든 함수
+func 체력깎임(얼마나):
+	Global.체력 -= 얼마나
+	if Global.체력 <= 0:
+		print("죽었습니다")
+	else:
+		Global.체력 -= 얼마나
+		
+	
+	

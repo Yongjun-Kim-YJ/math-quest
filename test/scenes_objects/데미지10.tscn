@@ -1,0 +1,13 @@
+[gd_scene load_steps=3 format=3 uid="uid://bsmx1l3ciyok5"]
+
+[ext_resource type="Script" uid="uid://xvjw168mbap4" path="res://데미지10.gd" id="1_rvm4v"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_406ij"]
+
+[node name="데미지10" type="Area2D"]
+collision_layer = 64
+script = ExtResource("1_rvm4v")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, -10)
+shape = SubResource("RectangleShape2D_406ij")

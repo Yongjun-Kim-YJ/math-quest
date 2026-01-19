@@ -2594,25 +2594,25 @@ script = ExtResource("1_btloq")
 [node name="기본Body" type="AnimatedSprite2D" parent="."]
 position = Vector2(0, -16)
 sprite_frames = SubResource("SpriteFrames_gypvn")
-animation = &"공격당함"
+animation = &"걷기"
 autoplay = "서있기"
 
 [node name="머리" type="AnimatedSprite2D" parent="."]
 position = Vector2(0, -16)
 sprite_frames = SubResource("SpriteFrames_m311d")
-animation = &"공격당함"
+animation = &"걷기"
 autoplay = "서있기"
 
 [node name="상의" type="AnimatedSprite2D" parent="."]
 position = Vector2(0, -16)
 sprite_frames = SubResource("SpriteFrames_edmkm")
-animation = &"공격당함"
+animation = &"걷기"
 autoplay = "서있기"
 
 [node name="하의" type="AnimatedSprite2D" parent="."]
 position = Vector2(0, -16)
 sprite_frames = SubResource("SpriteFrames_djc8s")
-animation = &"공격당함"
+animation = &"걷기"
 autoplay = "서있기"
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
