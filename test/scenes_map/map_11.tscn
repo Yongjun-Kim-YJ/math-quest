@@ -636,11 +636,9 @@ tile_set = SubResource("TileSet_wlskm")
 
 [node name="bounce_pad" parent="." instance=ExtResource("6_haj5g")]
 position = Vector2(4130, 961)
-scale = Vector2(4, 4)
 
 [node name="bounce_pad2" parent="." instance=ExtResource("6_haj5g")]
 position = Vector2(10591, 898)
-scale = Vector2(4, 4)
 
 [node name="캐릭터" parent="." instance=ExtResource("6_k78xr")]
 position = Vector2(292, 960)
