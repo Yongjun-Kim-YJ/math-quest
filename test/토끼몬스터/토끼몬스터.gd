@@ -1,11 +1,20 @@
 extends CharacterBody2D
 
+@export var stats: Stats
 @export var 중력가속도 = 1000
 @export var 이동속도 = 100
 @onready var 스프라이트 = $AnimatedSprite2D
+@onready var animation_player = $AnimationPlayer
 var 피격가능 = false
-var 체력 = 100
+var 체력 = 1000
 var 사망 = false
+
+func take_damage(amount: int) -> void:
+	#animation_player.play("hit")
+	print("Damage: ", amount)
+	체력-=amount
+	$TextureProgressBar.value -=amount/체력
+	
 
 func _physics_process(delta):
 	# 캐릭터가 바닥에 있지 않은 경우에만 중력 적용
@@ -22,14 +31,14 @@ func _physics_process(delta):
 		await 스프라이트.animation_finished
 		self.queue_free()
 	if 피격가능 and Input.is_action_just_pressed("공격"):
-		print(체력)
-		print("토끼 공격 당함 (-34)")
+		take_damage(0)
 		스프라이트.play("공격당함")
+		체력-=34
+		$TextureProgressBar.value = 체력
 		velocity.x = 0
 		스프라이트.flip_h = false
 		print("1111111")
 		await 스프라이트.animation_finished
-		체력-=34
 		스프라이트.play("달리기")
 		velocity.x = -이동속도
 		print(체력)
