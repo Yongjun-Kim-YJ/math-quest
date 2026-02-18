@@ -1,4 +1,4 @@
-[gd_scene load_steps=16 format=4 uid="uid://drj3kmfnj77fy"]
+[gd_scene load_steps=17 format=4 uid="uid://drj3kmfnj77fy"]
 
 [ext_resource type="Texture2D" uid="uid://bdp2y40p127jq" path="res://assets/backgrounds/bg131.png" id="1_fhxwk"]
 [ext_resource type="Texture2D" uid="uid://d1463wiyx102q" path="res://assets/backgrounds/bg132.png" id="2_yqdb5"]
@@ -7,6 +7,7 @@
 [ext_resource type="Texture2D" uid="uid://ba2d2txe1ycqi" path="res://assets/backgrounds/bg135.png" id="5_vnanh"]
 [ext_resource type="Texture2D" uid="uid://k76lakrmoama" path="res://assets/tiles/tile13.png" id="6_qa4ro"]
 [ext_resource type="PackedScene" uid="uid://bqabb3t2x85sq" path="res://캐릭터/캐릭터.tscn" id="7_sg5ja"]
+[ext_resource type="PackedScene" uid="uid://bho53l1cg48lx" path="res://hero/scene/hero.tscn" id="8_hqoj6"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_sg5ja"]
 texture = ExtResource("6_qa4ro")
@@ -467,3 +468,16 @@ motion_mirroring = Vector2(1900, 0)
 [node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground2/ParallaxLayer5"]
 position = Vector2(924, 594)
 texture = ExtResource("5_vnanh")
+
+[node name="hero" parent="." instance=ExtResource("8_hqoj6")]
+position = Vector2(439, 968)
+"중력가속도" = 700
+"점프속도" = -420
+"기본_이동속도" = 300
+"사다리속도" = 200
+last_dir = 0
+on_ladder = false
+is_climbing = false
+desired_x_pos = 0.0
+is_attacking = false
+is_damaged = false

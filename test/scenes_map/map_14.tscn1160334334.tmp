@@ -686,6 +686,7 @@ tile_set = SubResource("TileSet_7gnwi")
 
 [node name="hero" parent="." instance=ExtResource("9_8qlsk")]
 position = Vector2(138, 767)
+"기본_이동속도" = 100
 
 [node name="Camera2D" type="Camera2D" parent="hero"]
 limit_left = 0

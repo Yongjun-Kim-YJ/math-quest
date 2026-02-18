@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://fiqpx8cuxpac"
-path="res://.godot/imported/hero_numbering1128.png-6222407e6818ab737ea3bad36b799160.ctex"
+uid="uid://d37xgsnrko2b7"
+path="res://.godot/imported/hbd_s21.png-461ca7129754e88541000652efc32be7.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://hero/hero_numbering1128.png"
-dest_files=["res://.godot/imported/hero_numbering1128.png-6222407e6818ab737ea3bad36b799160.ctex"]
+source_file="res://hero/herobody/hbd_s21.png"
+dest_files=["res://.godot/imported/hbd_s21.png-461ca7129754e88541000652efc32be7.ctex"]
 
 [params]
 

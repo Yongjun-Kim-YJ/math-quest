@@ -686,6 +686,16 @@ tile_set = SubResource("TileSet_7gnwi")
 
 [node name="hero" parent="." instance=ExtResource("9_8qlsk")]
 position = Vector2(138, 767)
+"중력가속도" = 700
+"점프속도" = -420
+"기본_이동속도" = 90
+"사다리속도" = 200
+last_dir = 0
+on_ladder = false
+is_climbing = false
+desired_x_pos = 0.0
+is_attacking = false
+is_damaged = false
 
 [node name="Camera2D" type="Camera2D" parent="hero"]
 limit_left = 0
